@@ -1,0 +1,73 @@
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: navy; 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+input{ 
+  margin-top: 10px;
+  margin-left: 10px;	
+}
+
+button{ 
+  margin-top: 10px;
+}
+
+li a:hover {
+  /* background-color: #111111; */
+  background-color: red;
+}
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#birds tr:nth-child(even){background-color: #f2f2f2;}
+
