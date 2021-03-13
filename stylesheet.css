@@ -5,8 +5,9 @@ body {
 }
 
 h1 {
-  color: red;
+  color: navy;
   margin-left: 20px;
+  text-align: center;
 }
 
 ul {
@@ -43,15 +44,6 @@ li a:hover {
   background-color: red;
 }
 
-body {
-  background-color: lightblue;
-}
-
-h1 {
-  color: white;
-  text-align: center;
-}
-
 p {
   font-family: verdana;
   font-size: 20px;
@@ -73,7 +65,7 @@ p {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 80%;
 }
 
 td, th {
@@ -85,7 +77,4 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-</style>
-
-/* #birds tr:nth-child(even){background-color: #f2f2f2;} */
 
