@@ -8,88 +8,153 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+
+
+
 </head>
 
 <body style="text-align:center;">
 
-    <h1 style="color:green;">
+    <h1 style="color:navy;">
         Work History
     </h1>
 
-    <p id="GFG_UP" style="font-size: 15px; font-weight: bold;">
-    </p>
+    <p id="GFG_UP" style="font-size: 15px; font-weight: bold;"> </p>
 
-    <button onclick="GFG_FUN()">
-        click here
-    </button>
+    <!-- <button onclick="populateTable()">
+        Click Here
+    </button> -->
 
     <br><br>
 
-    <table id="table" align="center" border="1px"></table>
+    <!-- <table id="table" align="center" border="1px"></table> -->
+    <table id="table" align="center" </table>
+    <table id="whTable" align="center" border="1px"></table>
 
-    <script>
-        var el_up = document.getElementById("GFG_UP");
+        <script>
 
-        var list = [
-            { "col_1": "val_11", "col_2": "val_12", "col_3": "val_13" },
-            { "col_1": "val_21", "col_2": "val_22", "col_3": "val_23" },
-            { "col_1": "val_31", "col_2": "val_32", "col_3": "val_33" }
-        ];
+            var el_up = document.getElementById("GFG_UP");
+            //var elements = document.getElementById();
 
-        el_up.innerHTML = "Click on the button to create the "
-            + "table from the JSON data.<br><br>"
-            + JSON.stringify(list[0]) + "<br>"
-            + JSON.stringify(list[1]) + "<br>"
-            + JSON.stringify(list[2]);
+            // var list = [
+            //     { "col_1": "Value 1-1", "col_2": "Value 1-2", "col_3": "Value 1-3" },
+            //     { "col_1": "Value 2-1", "col_2": "Value 2-2", "col_3": "Value 2-3" },
+            //     { "col_1": "val   3-1", "col_2": "val   3-2", "col_3": "val   3-3" }
+            // ];
 
-        function GFG_FUN() {
-            var cols = [];
+            //Work History List
+            var whList = [
+                { "Company": "Costa Cruises", "From": "01/01/2020", "Until": "01/01/2021", "Title": "Analyst/Programmer" },
+                { "Company": "Oracle", "From": "01/01/2020", "Until": "01/01/2021", "Title": "Lead of Development" },
+                { "Company": "Ramstad", "From": "01/01/2020", "Until": "01/01/2021", "Title": "Lead of Development" },
+                { "Company": "Zerbone Catering", "From": "01/01/2020", "Until": "01/01/2021", "Title": "Lead of Development" },
+                { "Company": "Fidelio Cruises", "From": "01/01/2020", "Until": "01/01/2021", "Title": "Lead of Development" }
+            ]
 
-            for (var i = 0; i < list.length; i++) {
-                for (var k in list[i]) {
-                    if (cols.indexOf(k) === -1) {
+            // el_up.innerHTML = "Click on the button to create the table from the JSON data.<br><br>"
+            //     + JSON.stringify(list[0]) + "<br>"
+            //     + JSON.stringify(list[1]) + "<br>"
+            //     + JSON.stringify(list[2]);
 
-                        // Push all keys to the array 
-                        cols.push(k);
+            function populateWHTable(){
+                var whColumns = [];
+                for (var i =0; i <whList.length;i++){
+                    for (var k in whList[i]) {
+                        if (whColumns.indexOf(k) === -1){
+                            whColumns.push(k);    //push keys to the array
+                        }
                     }
                 }
-            }
 
-            // Create a table element 
-            var table = document.createElement("table");
+                // Create a table element 
+                var whTable = document.createElement("Table");
 
-            // Create table row tr element of a table 
-            var tr = table.insertRow(-1);
+                 // Create table row tr element of a table 
+                //var whTableRow = table.insertRow(-1);
+                var whTableRow = whTable.insertRow(-1);
+                for (var i = 0; i < whColumns.length; i++) {
 
-            for (var i = 0; i < cols.length; i++) {
+                    // Create the table header th element 
+                    var whTableHeader = document.createElement("th");
+                    whTableHeader.innerHTML = whColumns[i];
 
-                // Create the table header th element 
-                var theader = document.createElement("th");
-                theader.innerHTML = cols[i];
-
-                // Append columnName to the table row 
-                tr.appendChild(theader);
-            }
-
-            // Adding the data to the table 
-            for (var i = 0; i < list.length; i++) {
-
-                // Create a new row 
-                trow = table.insertRow(-1);
-                for (var j = 0; j < cols.length; j++) {
-                    var cell = trow.insertCell(-1);
-
-                    // Inserting the cell at particular place 
-                    cell.innerHTML = list[i][cols[j]];
+                    // Append columnName to the table row 
+                    whTableRow.appendChild(whTableHeader);
                 }
+
+                
+
+                // Adding the data to the table 
+                for (var i = 0; i < whList.length; i++) {
+                    // Create a new row 
+                    tableRow = whTable.insertRow(-1);
+                   
+                    for (var j = 0; j < whColumns.length; j++) {
+                        var cell = tableRow.insertCell(-1);
+                        // Inserting the cell at particular place 
+                        cell.innerHTML = whList[i][whColumns[j]];
+                    }
+                }
+
+                // Add the newely created table containing json data 
+                var element1 = document.getElementById("whTable");
+                element1.innerHTML = "";
+                element1.appendChild(whTable);
+
             }
 
-            // Add the newely created table containing json data 
-            var el = document.getElementById("table");
-            el.innerHTML = "";
-            el.appendChild(table);
-        }
-    </script>
+            // function populateTable() {
+            //     var cols = [];
+
+            //     for (var i = 0; i < list.length; i++) {
+            //         for (var k in list[i]) {
+            //             if (cols.indexOf(k) === -1) {
+            //                 // Push all keys to the array 
+            //                 cols.push(k);
+            //             }
+            //         }
+            //     }
+
+            //     // Create a table element 
+            //     var table = document.createElement("table");
+
+            //     // Create table row tr element of a table 
+            //     var tr = table.insertRow(-1);
+            //     for (var i = 0; i < cols.length; i++) {
+
+            //         // Create the table header th element 
+            //         var theader = document.createElement("th");
+            //         theader.innerHTML = cols[i];
+
+            //         // Append columnName to the table row 
+            //         tr.appendChild(theader);
+            //     }
+
+            //     // Adding the data to the table 
+            //     for (var i = 0; i < list.length; i++) {
+            //         // Create a new row 
+            //         trow = table.insertRow(-1);
+            //         for (var j = 0; j < cols.length; j++) {
+            //             var cell = trow.insertCell(-1);
+
+            //             // Inserting the cell at particular place 
+            //             cell.innerHTML = list[i][cols[j]];
+            //         }
+            //     }
+
+            //     // Add the newely created table containing json data 
+            //     var el = document.getElementById("table");
+            //     el.innerHTML = "";
+            //     el.appendChild(table);
+            // }
+
+        </script>
+
+        <script type="text/javascript">
+            //window.onload = populateTable();
+            window.onload = populateWHTable();
+        </script>
+
 </body>
 
 </html>
