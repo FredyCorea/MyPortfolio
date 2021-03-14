@@ -30,6 +30,9 @@
     <p class="logo3">Professional Porfolio</p>
   </div>
 
+  <div data-bind="text: firstName"></div>
+  <div data-bind="text: lastName"></div>
+
   <div class="header-right">
     <a class="active" href="#home">Home</a>
     <a href="#contact">Contact</a>
@@ -37,6 +40,16 @@
   </div>
 
 </div>
+
+<script>
+  function MyViewModel() {
+    this.firstName = "John";
+    this.lastName = "Smith";
+  }
+
+  ko.applyBindings(new MyViewModel());
+
+</script>
 
 <body>
 
@@ -55,12 +68,12 @@
   <!-- <h1>My Porfolio Website</h1> -->
   <!-- <p>A website created by me.</p> -->
   <!-- <img src="Images/myself.jpg" alt="Portrait" width="85" height="100"> -->
-  
+
   <div>
     <img src="Images/myself.jpg" alt="Portrait" align="left" style="vertical-align:middle;margin:50px 50px">
   </div>
-  
-  
+
+
   <br>
   <p>Content goes here</p>
   <p>Content goes here</p>
@@ -74,7 +87,7 @@
 </body>
 
 <footer id="footer">
- 
+
 
   <div id="footer-content">Sticky Footer
     <label> Address: </label>

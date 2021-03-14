@@ -1,21 +1,11 @@
 
 var el_up = document.getElementById("GFG_UP");
 
-
-//Work History List
-var whList = [
-    { "Company": "Costa Cruises*", "From": "01/01/2020", "Until": "01/01/2021", "Title": "Analyst/Programmer" },
-    { "Company": "Oracle", "From": "01/01/2020", "Until": "01/01/2021", "Title": "Lead of Development" },
-    { "Company": "Ramstad", "From": "01/01/2020", "Until": "01/01/2021", "Title": "Lead of Development" },
-    { "Company": "Zerbone Catering", "From": "01/01/2020", "Until": "01/01/2021", "Title": "Lead of Development" },
-    { "Company": "Fidelio Cruises", "From": "01/01/2020", "Until": "01/01/2021", "Title": "Lead of Development" }
-]
-
-function populateWHTable(){
+function populateWHTable( whList ) {
     var whColumns = [];
-    for (var i =0; i <whList.length;i++){
+    for (var i = 0; i < whList.length; i++) {
         for (var k in whList[i]) {
-            if (whColumns.indexOf(k) === -1){
+            if (whColumns.indexOf(k) === -1) {
                 whColumns.push(k);    //push keys to the array
             }
         }
@@ -24,7 +14,7 @@ function populateWHTable(){
     // Create a table element 
     var whTable = document.createElement("Table");
 
-     // Create table row tr element of a table 
+    // Create table row tr element of a table 
     //var whTableRow = table.insertRow(-1);
     var whTableRow = whTable.insertRow(-1);
     for (var i = 0; i < whColumns.length; i++) {
@@ -37,13 +27,11 @@ function populateWHTable(){
         whTableRow.appendChild(whTableHeader);
     }
 
-    
-
-    // Adding the data to the table 
+   // Adding the data to the table 
     for (var i = 0; i < whList.length; i++) {
         // Create a new row 
         tableRow = whTable.insertRow(-1);
-       
+
         for (var j = 0; j < whColumns.length; j++) {
             var cell = tableRow.insertCell(-1);
             // Inserting the cell at particular place 
