@@ -7,8 +7,8 @@
     </title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
-
+    <link rel="stylesheet" type="text/css" href="Code/stylesheet.css" media="screen" />
+    <script src="Code/Portfolio.js"></script>
 
 
 </head>
@@ -21,26 +21,15 @@
 
     <p id="GFG_UP" style="font-size: 15px; font-weight: bold;"> </p>
 
-    <!-- <button onclick="populateTable()">
-        Click Here
-    </button> -->
-
     <br><br>
 
     <!-- <table id="table" align="center" border="1px"></table> -->
     <table id="table" align="center" </table>
     <table id="whTable" align="center" border="1px"></table>
 
-        <script>
+        <!-- <script>
 
             var el_up = document.getElementById("GFG_UP");
-            //var elements = document.getElementById();
-
-            // var list = [
-            //     { "col_1": "Value 1-1", "col_2": "Value 1-2", "col_3": "Value 1-3" },
-            //     { "col_1": "Value 2-1", "col_2": "Value 2-2", "col_3": "Value 2-3" },
-            //     { "col_1": "val   3-1", "col_2": "val   3-2", "col_3": "val   3-3" }
-            // ];
 
             //Work History List
             var whList = [
@@ -50,11 +39,6 @@
                 { "Company": "Zerbone Catering", "From": "01/01/2020", "Until": "01/01/2021", "Title": "Lead of Development" },
                 { "Company": "Fidelio Cruises", "From": "01/01/2020", "Until": "01/01/2021", "Title": "Lead of Development" }
             ]
-
-            // el_up.innerHTML = "Click on the button to create the table from the JSON data.<br><br>"
-            //     + JSON.stringify(list[0]) + "<br>"
-            //     + JSON.stringify(list[1]) + "<br>"
-            //     + JSON.stringify(list[2]);
 
             function populateWHTable(){
                 var whColumns = [];
@@ -100,58 +84,12 @@
                 var element1 = document.getElementById("whTable");
                 element1.innerHTML = "";
                 element1.appendChild(whTable);
-
             }
 
-            // function populateTable() {
-            //     var cols = [];
-
-            //     for (var i = 0; i < list.length; i++) {
-            //         for (var k in list[i]) {
-            //             if (cols.indexOf(k) === -1) {
-            //                 // Push all keys to the array 
-            //                 cols.push(k);
-            //             }
-            //         }
-            //     }
-
-            //     // Create a table element 
-            //     var table = document.createElement("table");
-
-            //     // Create table row tr element of a table 
-            //     var tr = table.insertRow(-1);
-            //     for (var i = 0; i < cols.length; i++) {
-
-            //         // Create the table header th element 
-            //         var theader = document.createElement("th");
-            //         theader.innerHTML = cols[i];
-
-            //         // Append columnName to the table row 
-            //         tr.appendChild(theader);
-            //     }
-
-            //     // Adding the data to the table 
-            //     for (var i = 0; i < list.length; i++) {
-            //         // Create a new row 
-            //         trow = table.insertRow(-1);
-            //         for (var j = 0; j < cols.length; j++) {
-            //             var cell = trow.insertCell(-1);
-
-            //             // Inserting the cell at particular place 
-            //             cell.innerHTML = list[i][cols[j]];
-            //         }
-            //     }
-
-            //     // Add the newely created table containing json data 
-            //     var el = document.getElementById("table");
-            //     el.innerHTML = "";
-            //     el.appendChild(table);
-            // }
-
-        </script>
+            
+        </script> -->
 
         <script type="text/javascript">
-            //window.onload = populateTable();
             window.onload = populateWHTable();
         </script>
 
