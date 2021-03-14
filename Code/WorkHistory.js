@@ -2,6 +2,7 @@
 var el_up = document.getElementById("GFG_UP");
 
 function populateWHTable( whList ) {
+
     var whColumns = [];
     for (var i = 0; i < whList.length; i++) {
         for (var k in whList[i]) {
@@ -14,7 +15,7 @@ function populateWHTable( whList ) {
     // Create a table element 
     var whTable = document.createElement("Table");
 
-    // Create table row tr element of a table 
+    //Create table row tr element of a table 
     //var whTableRow = table.insertRow(-1);
     var whTableRow = whTable.insertRow(-1);
     for (var i = 0; i < whColumns.length; i++) {
@@ -32,11 +33,24 @@ function populateWHTable( whList ) {
         // Create a new row 
         tableRow = whTable.insertRow(-1);
 
-        for (var j = 0; j < whColumns.length; j++) {
+        for (var j = 0; j < whColumns.length; j++) 
+        {
             var cell = tableRow.insertCell(-1);
             // Inserting the cell at particular place 
-            cell.innerHTML = whList[i][whColumns[j]];
+            if (whColumns[j] != "Company"){
+                cell.innerHTML = whList[i][whColumns[j]];
+            } else{
+                //var linkPath = "<a href=" + "https://www.w3schools.com"+ ">"
+                var linkPath = "<a href= " + "'" + whList[i].PagePath + "'>";
+                //linkPath = linkPath + "yourpage</td>";
+                linkPath = linkPath + whList[i].Company +  "</td>";
+                cell.innerHTML = linkPath;
+                temp   = cell.innerHTML ;  //for stop only, toeval cell.innerHTML, remove it!
+            }
         }
+
+        //<td onclick="location.href='yourpage.html'">go to yourpage</td>
+        //<a href="https://www.w3schools.com">Visit W3Schools.com!</a>
     }
 
     // Add the newely created table containing json data 

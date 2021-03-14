@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- <script src="Code/Portfolio.js"></script> -->
     <script src="Code/WorkHistory.js"></script>
-    <script src="Code/Data.js"></script>
+    <script src="Data/Data.js"></script>
 
 </head>
 
@@ -28,16 +28,8 @@
     <table id="whTable" align="center" border="1px"></table>
 
     <script type="text/javascript">
-        //whList1 =[];
-        // $(document).ready(function () {
-        //     // Do stuff here, including _calling_ codeAddress(), but not _defining_ it!
-        //     whList1 = GetWorkHistoryData();
-        // });
-
         var whList = GetWorkHistoryData();
-
         window.onload = populateWHTable(whList);
-        
     </script>
 
 </body>

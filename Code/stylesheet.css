@@ -92,6 +92,12 @@ table {
   border: 1px solid #dddddd;
 }
 
+tr:hover,
+tr:focus-within {
+  background: #f2f3ff;
+  outline: none;
+}
+
 td, th {
   border: 1px solid #dddddd;
   text-align: left;

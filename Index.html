@@ -14,6 +14,7 @@
 
   <link type="text/css" href="Code/stylesheet.css" media="screen" rel="styleSheet" />
   <link type="text/css" href="Code/header.css" rel="styleSheet" media="screen" />
+  <script src="Data/Data.js"></script>
 
 </head>
 
@@ -41,16 +42,6 @@
 
 </div>
 
-<script>
-  function MyViewModel() {
-    this.firstName = "John";
-    this.lastName = "Smith";
-  }
-
-  ko.applyBindings(new MyViewModel());
-
-</script>
-
 <body>
 
   <nav role="navigation" aria-label="main menu">
@@ -65,6 +56,14 @@
     </ul>
   </nav>
 
+  <script type="text/javascript">
+    var peopleList = GetPeopleData();
+    var name = peopleList[0].firstName;
+    var lastName = peopleList[0].lastName;
+  </script>
+
+
+
   <!-- <h1>My Porfolio Website</h1> -->
   <!-- <p>A website created by me.</p> -->
   <!-- <img src="Images/myself.jpg" alt="Portrait" width="85" height="100"> -->
@@ -72,7 +71,6 @@
   <div>
     <img src="Images/myself.jpg" alt="Portrait" align="left" style="vertical-align:middle;margin:50px 50px">
   </div>
-
 
   <br>
   <p>Content goes here</p>
@@ -84,11 +82,75 @@
   <p>Content goes here</p>
   <p>Content goes here</p>
 
+  <!-- dynamic json data biding test -->
+  <div class="news-story">
+    <h5>sample 1</h5>
+    <p>By: author 1</p>
+    <h5>sample 2</h5>
+    <p>By: author 2</p>
+  </div>
+
+  <script type="text/javascript">
+    var json = {
+      "items": [
+        {
+          "title": "sample x",
+          "author": "author x"
+        },
+        {
+          "title": "sample y",
+          "author": "author y"
+        }
+      ]
+    };
+
+    var bindDataToHTML = function (data, element) {
+      var h5 = null;
+      var p = null;
+      h5 = element.getElementsByTagName("h5");
+      p = element.getElementsByTagName("p");
+      h5[0].innerText = data.items[0].title;
+      h5[1].innerText = data.items[1].title;
+      p[0].innerText = data.items[0].author;
+      p[1].innerText = data.items[1].author;
+    };
+
+    document.getElementsByClassName = function (cl) {
+      var retnode = [];
+      var myclass = new RegExp('\\b' + cl + '\\b');
+      var elem = this.getElementsByTagName('*');
+      for (var i = 0; i < elem.length; i++) {
+        var classes = elem[i].className;
+        if (myclass.test(classes)) { retnode.push(elem[i]); }
+      }
+      return retnode;
+    };
+
+    // For sample purpose, let's imagine this method is a callback
+    // for a request that provides you with your json data
+    var doRequest = function () {
+      var data = json;
+      var element = null;
+
+      var x = document.getElementsByClassName("news-story");
+
+      if ((null != x) && (0 < x.length)) {
+        element = x[0];
+      }
+      bindDataToHTML(data, element);
+    };
+
+    (function () {
+      doRequest();
+    })();
+
+  </script>
+  <!-- dynamic json data biding test -->
+
+
 </body>
 
 <footer id="footer">
-
-
   <div id="footer-content">Sticky Footer
     <label> Address: </label>
     <label> Phone: </label>
