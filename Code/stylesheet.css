@@ -1,306 +1,313 @@
 .logo1 {
-  color:#003366;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: left;
-  line-height: 10%
+    color: #003366;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 10%
 }
 
-.logo2{
-  color:#003366;
-  font-size: 30px;
-  text-align: left;
-  line-height: 20%
+.logo2 {
+    color: #003366;
+    font-size: 30px;
+    text-align: left;
+    line-height: 20%
 }
 
-.logo3{
-  color:#003366;
-  font-size: 25px;
-  text-align: left;
-  line-height: 20%
+.logo3 {
+    color: #003366;
+    font-size: 25px;
+    text-align: left;
+    line-height: 20%
 }
 
 .column {
-  float: left;
-  /* width: 33.33%; */
-  padding: 5px;
+    float: left;
+    /* width: 33.33%; */
+    padding: 5px;
 }
+
 
 /* Clear floats after image containers */
+
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
-nav{
-  width: 100vw;
-  background-color:#001a4d;
+nav {
+    width: 100vw;
+    background-color: #001a4d;
 }
 
 body {
-  background-color:azure;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 h1 {
-  color:#001a4d;
-  margin-left: 20px;
-  text-align: center;
+    color: #001a4d;
+    margin-left: 20px;
+    text-align: center;
 }
 
 h1.reduced-height {
-  color:#001a4d;
-  margin-left: 5px;
-  /* text-align: center; */
-  line-height: 50%
+    color: #001a4d;
+    margin-left: 5px;
+    /* text-align: center; */
+    line-height: 50%
 }
 
 h2.reduced-height {
-  color:#001a4d;
-  margin-left: 5px;
-  /* text-align: center; */
-  line-height: 50%
+    color: #001a4d;
+    margin-left: 5px;
+    /* text-align: center; */
+    line-height: 50%
 }
 
 p.center {
-  text-align: center;
+    text-align: center;
 }
 
 p.large {
-  font-size: 300%;
+    font-size: 300%;
 }
 
-p.medium{
-  font-size: 150%;
+p.medium {
+    font-size: 150%;
 }
 
 p {
-  font-family: verdana;
-  font-size: 20px;
+    font-family: verdana;
+    font-size: 20px;
 }
 
-p.normal{
-  font-size: 100%;
-  /* display: block; */
-  margin-top: o;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  line-height: 100%
+p.normal {
+    font-size: 100%;
+    /* display: block; */
+    margin-top: o;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 100%
 }
 
-p.reduced-hight{
-  line-height: 50%
+p.reduced-hight {
+    line-height: 50%
 }
 
-p.reduced-hight-centered{
-  line-height: 50%;
-  text-align: center;
+p.reduced-hight-centered {
+    line-height: 50%;
+    text-align: center;
 }
 
-p.reduced-hight-right{
-  line-height: 50%;
-  text-align: right;
+p.reduced-hight-right {
+    line-height: 50%;
+    text-align: right;
 }
 
-p.normal-idented{
-  font-size: 100%;
-  margin-top: o;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  line-height: 100%;
-  text-indent: 50px;
+p.normal-idented {
+    font-size: 100%;
+    margin-top: o;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 100%;
+    text-indent: 50px;
 }
-
 
 
 /* ul for main menu formatting */
-.navMenu{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  /* background-color: #0080ff;  */
-  background-color:#001a4d;
-  /*this option by default dispose the elements in a row (flex-direction: row)*/
-  display: flex;
+
+.navMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #0080ff;  */
+    background-color: #001a4d;
+    /*this option by default dispose the elements in a row (flex-direction: row)*/
+    display: flex;
 }
+
 
 /*list elements inside an OL or UL */
+
+
 /*also impacts the main menu */
+
 li {
-  float: left;
-   /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
-   margin: 0 2vw;
-   /* our font-size will be 3% of the height of the viewport */
-  font-size: 3vh;
+    float: left;
+    /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
+    margin: 0 2vw;
+    /* our font-size will be 3% of the height of the viewport */
+    font-size: 3vh;
 }
+
 
 /*list with normal text */
-li.normal{
-  /* list-style-type: none; */
-  /* margin: 0;
-  padding: 0; */
-  font-size: 100%;
-  float: left;
 
+li.normal {
+    /* list-style-type: none; */
+    /* margin: 0;
+  padding: 0; */
+    font-size: 100%;
+    float: left;
 }
 
+
 /* list element combined with a */
+
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 1vw;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1vw;
+    text-decoration: none;
 }
 
 li a:hover {
-  /* background-color: #111111; */
-  /* background-color: red; */
-  background-color: #C6E9FF;
-  color: black;
+    /* background-color: #111111; */
+    /* background-color: red; */
+    background-color: #C6E9FF;
+    color: black;
 }
 
-input{ 
-  margin-top: 10px;
-  margin-left: 10px;	
+input {
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
-button{ 
-  margin-top: 10px;
+button {
+    margin-top: 10px;
 }
 
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 95%;
-  border: 1px solid #dddddd;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    border: 1px solid #dddddd;
 }
+
 
 /* “hover” selector, which syntax is element:hover */
+
 tr:hover,
 tr:focus-within {
-  background: #f2f3ff;
-  outline: none;
+    background: #f2f3ff;
+    outline: none;
 }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+    background-color: #dddddd;
 }
+
 
 /* hide the toggle button from the nave menu */
-button{
-  display: none;
-  margin-bottom: 1px;
-  margin-top: 1px;
+
+button {
+    display: none;
+    margin-bottom: 1px;
+    margin-top: 1px;
 }
 
-div.reduced-text{
-  background-color: whitesmoke;
-  padding: 12px;
+div.reduced-text {
+    background-color: whitesmoke;
+    padding: 12px;
 }
 
 
 /* Add media queries for responsiveness - 
 when the screen is 500px wide or less, 
 stack the links on top of each other */
-@media only screen and (max-width: 500px) 
-{
-  
-  div.reduced-text{
-      background-color: whitesmoke;
-      font-size: 12px;
-      line-height: 85%
+
+@media only screen and (max-width: 500px) {
+    div.reduced-text {
+        background-color: whitesmoke;
+        font-size: 12px;
+        line-height: 85%
     }
-
-  /*reducte the font for the second title when using reduced display*/
-  .logo2
-  {
-    color:#001a4d;
-    /* font-size: 20px; */
-    font-size: 95%;
-    text-align: left;
-    line-height: 20%
-  }
-
-  .logo3{
-    color:#003366;
-    font-size: 90%;
-    text-align: left;
-    line-height: 20%
-  }
-
-  /* makes the X nav menu button visible */
-  button{
-    display: block;
-    /* style the button */
-    padding: 1vw;
-    font-size: vh;
-    background-color:#003366;
-    border:none;
-    color:#C6E9FF;
-    cursor: pointer;
-    /*this put the button on the left*/
-    align-self: flex-start;
-  }
-
-  /*shows elements in a column*/
-  ul{
-    flex-direction: column;
-  }
-
-  /* inpact the menu in reduce size display*/
-  /* li{
+    /*reducte the font for the second title when using reduced display*/
+    .logo2 {
+        color: #001a4d;
+        /* font-size: 20px; */
+        font-size: 95%;
+        text-align: left;
+        line-height: 20%
+    }
+    .logo3 {
+        color: #003366;
+        font-size: 90%;
+        text-align: left;
+        line-height: 20%
+    }
+    /* makes the X nav menu button visible */
+    button {
+        display: block;
+        /* style the button */
+        padding: 1vw;
+        font-size: vh;
+        background-color: #003366;
+        border: none;
+        color: #C6E9FF;
+        cursor: pointer;
+        /*this put the button on the left*/
+        align-self: flex-start;
+    }
+    /*shows elements in a column*/
+    ul {
+        flex-direction: column;
+    }
+    /* inpact the menu in reduce size display*/
+    /* li{
     margin:1px;
     background:#003366;
   } */
-
-  /* makes sure that the a tag will take the entire screen*/
-  a{
-    display: block;
-  }
-
-  .header a 
-  {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-  .header-right {
-    float: none;
-  }
-
-  p.reduced-hight-right{
-    line-height: 50%;
-    font-size: 12px;
-    text-align: right;
-  }
-
-  p.normal-idented{
-    
-    text-indent: 5px; 
-  }
+    /* makes sure that the a tag will take the entire screen*/
+    a {
+        display: block;
+    }
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+    p.reduced-hight-right {
+        line-height: 50%;
+        font-size: 12px;
+        text-align: right;
+    }
+    p.normal-idented {
+        text-indent: 5px;
+    }
+    h1 {
+        color: #001a4d;
+        margin-left: 20px;
+        text-align: left;
+    }
 }
 
 #footer {
-  height: 50px; /* the footer's total height */
+    height: 50px;
+    /* the footer's total height */
 }
 
 #footer-content {
-  background-color: #003366;
-  /* border: 1px solid #ab47bc; */
-  height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
-  padding: 8px;
-  color:aquamarine;
+    background-color: #003366;
+    /* border: 1px solid #ab47bc; */
+    height: 32px;
+    /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 8px;
+    color: aquamarine;
 }
