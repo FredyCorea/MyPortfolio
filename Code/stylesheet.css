@@ -1,7 +1,5 @@
-
-
 .logo1 {
-  color:#001a4d;
+  color:#003366;
   font-size: 40px;
   font-weight: bold;
   text-align: left;
@@ -9,14 +7,14 @@
 }
 
 .logo2{
-  color:#001a4d;
+  color:#003366;
   font-size: 30px;
   text-align: left;
   line-height: 20%
 }
 
 .logo3{
-  color:#001a4d;
+  color:#003366;
   font-size: 25px;
   text-align: left;
   line-height: 20%
@@ -39,7 +37,24 @@ h1 {
   text-align: center;
 }
 
-ul {
+p.center {
+  text-align: center;
+}
+
+p.large {
+  font-size: 300%;
+}
+
+p.medium{
+  font-size: 150%;
+}
+
+p.normal{
+  font-size: 100%;
+}
+
+/* ul for main menu formatting */
+.navMenu{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -50,6 +65,8 @@ ul {
   display: flex;
 }
 
+/*list elements inside an OL or UL */
+/*also impacts the main menu */
 li {
   float: left;
    /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
@@ -58,6 +75,18 @@ li {
   font-size: 3vh;
 }
 
+/*list with normal text */
+li.normal{
+  /* list-style-type: none; */
+  /* margin: 0;
+  padding: 0; */
+  font-size: 100%;
+  float: left;
+
+}
+
+
+/* list element combined with a */
 li a {
   display: block;
   color: white;
@@ -132,12 +161,23 @@ button{
   margin-top: 1px;
 }
 
+div.reducedText{
+  background-color: whitesmoke;
+  padding: 12px;
+}
+
+
 /* Add media queries for responsiveness - 
 when the screen is 500px wide or less, 
 stack the links on top of each other */
-@media only screen and (max-width: 500px) 
+@media only screen and (max-width: 600px) 
 {
+  
+  div.reducedText{
+      font-size: 12px;
+    }
 
+  /*reducte the font for the second title when using reduced display*/
   .logo2
   {
     color:#001a4d;
@@ -146,13 +186,13 @@ stack the links on top of each other */
     line-height: 20%
   }
 
-  /* makes the nav menu button visible */
+  /* makes the X nav menu button visible */
   button{
     display: block;
     /* style the button */
     padding: 1vw;
     font-size: vh;
-    background-color:#001a4d;
+    background-color:#003366;
     border:none;
     color:#C6E9FF;
     cursor: pointer;
@@ -163,16 +203,13 @@ stack the links on top of each other */
   /*shows elements in a column*/
   ul{
     flex-direction: column;
-    border-color: azure;
-    border-bottom-width: 1px;
-    background: silver;
   }
 
-  /* deletes margin on top or bottom of the a tag*/
-  li{
+  /* inpact the menu in reduce size display*/
+  /* li{
     margin:1px;
-    background:#001a4d;
-  }
+    background:#003366;
+  } */
 
   /* makes sure that the a tag will take the entire screen*/
   a{
@@ -196,8 +233,9 @@ stack the links on top of each other */
 }
 
 #footer-content {
-  background-color: #f3e5f5;
-  border: 1px solid #ab47bc;
+  background-color: #003366;
+  /* border: 1px solid #ab47bc; */
   height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
   padding: 8px;
+  color:aquamarine;
 }
