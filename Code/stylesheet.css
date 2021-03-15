@@ -172,7 +172,8 @@ stack the links on top of each other */
   /*reducte the font for the second title when using reduced display*/
   .logo2
   {
-    color:#001a4d;
+    /* color:#001a4d; */
+    color: red;
     /* font-size: 20px; */
     font-size: 20%;
     text-align: left;
