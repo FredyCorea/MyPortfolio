@@ -173,7 +173,15 @@ stack the links on top of each other */
   .logo2
   {
     color:#001a4d;
-    font-size: 25px;
+    /* font-size: 20px; */
+    font-size: 70%;
+    text-align: left;
+    line-height: 20%
+  }
+
+  .logo3{
+    color:#003366;
+    font-size: 70%;
     text-align: left;
     line-height: 20%
   }
