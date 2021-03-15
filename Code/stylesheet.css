@@ -1,7 +1,7 @@
 
 
 .logo1 {
-  color: navy;
+  color: #0040ff;
   font-size: 40px;
   font-weight: bold;
   text-align: left;
@@ -9,26 +9,32 @@
 }
 
 .logo2{
-  color:blue;
+  color:#0040ff;
   font-size: 30px;
   text-align: left;
   line-height: 20%
 }
 
 .logo3{
-  color:blue;
+  color:#0040ff;
   font-size: 25px;
   text-align: left;
   line-height: 20%
 }
 
+nav{
+  width: 100vw;
+  background-color: #0080ff;
+}
+
 body {
   background-color:azure;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 h1 {
-  color: navy;
+  color:#0040ff;
   margin-left: 20px;
   text-align: center;
 }
@@ -38,19 +44,32 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: navy; 
+  background-color: #0080ff; 
+  /*this option by default dispose the elements in a row (flex-direction: row)*/
+  display: flex;
 }
 
 li {
   float: left;
+   /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
+   margin: 0 2vw;
+   /* our font-size will be 3% of the height of the viewport */
+  font-size: 3vh;
 }
 
 li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 16px;
+  padding: 1vw;
   text-decoration: none;
+}
+
+li a:hover {
+  /* background-color: #111111; */
+  /* background-color: red; */
+  background-color: #C6E9FF;
+  color: black;
 }
 
 input{ 
@@ -60,11 +79,6 @@ input{
 
 button{ 
   margin-top: 10px;
-}
-
-li a:hover {
-  /* background-color: #111111; */
-  background-color: red;
 }
 
 p {
@@ -92,6 +106,8 @@ table {
   border: 1px solid #dddddd;
 }
 
+
+/* “hover” selector, which syntax is element:hover */
 tr:hover,
 tr:focus-within {
   background: #f2f3ff;
@@ -108,9 +124,46 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) 
+/* hide the toggle button from the nave menu */
+button{
+  display: none;
+}
+
+/* Add media queries for responsiveness - 
+when the screen is 500px wide or less, 
+stack the links on top of each other */
+@media only screen and (max-width: 500px) 
 {
+
+  /* makes the nav menu button visible */
+  button{display: block;
+  /* style the button */
+  padding: 1vw;
+  font-size: 3vh;
+  background-color: #0040ff;
+  border:none;
+  color:#C6E9FF;
+  cursor: pointer;
+  /*this put the button on the left*/
+  align-self: flex-start;
+
+  }
+  /*shows elements in a column*/
+  ul{
+    flex-direction: column;;
+  }
+
+  /* deletes margin on top or bottom of the a tag*/
+  li{
+    margin:0;
+  }
+
+  /* makes sure that the a tag will take the entire screen*/
+
+  a{
+    display: block;
+  }
+
   .header a 
   {
     float: none;

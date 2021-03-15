@@ -15,6 +15,8 @@
   <link type="text/css" href="Code/stylesheet.css" media="screen" rel="styleSheet" />
   <link type="text/css" href="Code/header.css" rel="styleSheet" media="screen" />
   <script src="Data/Data.js"></script>
+  <!-- <script src="jquery-3.4.0.min.js"></script> -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 </head>
 
@@ -27,18 +29,27 @@
 
   <div>
     <p class="logo1">Fredy R. Corea</p>
-    <p class="logo2">Software Designer and Architect</p>
+    <p class="logo2">Software Designer and Devloper</p>
     <p class="logo3">Professional Porfolio</p>
   </div>
 
   <div data-bind="text: firstName"></div>
   <div data-bind="text: lastName"></div>
 
-  <div class="header-right">
-    <a class="active" href="#home">Home</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
+  <!-- Navigation menu -->
+  <!-- https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f-->
+  <nav>
+    <div class="header-right">
+      <a href="#Technologies">Technologies</a>
+      <a href="#WorkHistory">Work History</a>
+      <a href="#Portfoliio">Portfoliio</a>
+      <a href="#Education">Education</a>
+      <a href="#References">References</a>
+      <a href="#home">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </nav>
 
 </div>
 
@@ -46,12 +57,12 @@
 
   <nav role="navigation" aria-label="main menu">
     <ul>
-      <li><a href="/"> Home </a> </li>
-      <li><a href="Portfoliio.html"> Portfolio </a> </li>
+      <!-- Button to toggle menu -->
+      <button>X</button>
       <li><a href="Technologies.html"> Technologies </a> </li>
       <li><a href="WorkHistory.html">Work History </a> </li>
-      <li><a href="FormalEducation.html">Formal Education </a></li>
-      <li><a href="SeltTraining.html">Self Training </a></li>
+      <li><a href="Portfoliio.html"> Portfolio </a> </li>
+      <li><a href="Education.html">Formal Education </a></li>
       <li><a href="References.html">References </a></li>
     </ul>
   </nav>
@@ -72,81 +83,29 @@
     <img src="Images/myself.jpg" alt="Portrait" align="left" style="vertical-align:middle;margin:50px 50px">
   </div>
 
-  <br>
-  <p>Content goes here</p>
-  <p>Content goes here</p>
-  <p>Content goes here</p>
-  <p>Content goes here</p>
-  <p>Content goes here</p>
-  <p>Content goes here</p>
-  <p>Content goes here</p>
-  <p>Content goes here</p>
+  <article>
 
-  <!-- dynamic json data biding test -->
-  <div class="news-story">
-    <h5>sample 1</h5>
-    <p>By: author 1</p>
-    <h5>sample 2</h5>
-    <p>By: author 2</p>
-  </div>
+    <h1>Soft Skills</h1>
+    <br>
+    Change Agility adaption, Collaboration Communicating for Impact, Competitive Edge, Mastering Complexity, Analytical
+    Skills, Critical Thinking Skills, Performance Drive & Execution. English: speaks, read and write, Spanish speaks,
+    read and write, Italian speaks and read.
+    <br>
+    <br>
+    I can produce excellent results without the need for constant supervision. With decades of experience, I developed a
+    keen sense of responsibility and self-control and the capability to achieve given goals. But I also retain that
+    teamwork is crucial nowadays in business and the information technology worlds. I enjoy when all parts come together
+    due to the process of working collaboratively with a group of people to achieve success.
+    While working with small companies, I learned to develop the capability to be multifaceted; if the company needs me
+    to participate in several aspects of a project, I am always open to the experience.
+    <br>
+    <br>
+    Being a team player, I am always looking for alternatives to bring added value to the group, and always willing to
+    help other mates when needed. I am also open to suggestions from collaborators and always willing to compromise when
+    needed. I retain it is essential to listen to other people's opinions and integrate their ideas and recommendations
+    in possible ways.
 
-  <script type="text/javascript">
-    var json = {
-      "items": [
-        {
-          "title": "sample x",
-          "author": "author x"
-        },
-        {
-          "title": "sample y",
-          "author": "author y"
-        }
-      ]
-    };
-
-    var bindDataToHTML = function (data, element) {
-      var h5 = null;
-      var p = null;
-      h5 = element.getElementsByTagName("h5");
-      p = element.getElementsByTagName("p");
-      h5[0].innerText = data.items[0].title;
-      h5[1].innerText = data.items[1].title;
-      p[0].innerText = data.items[0].author;
-      p[1].innerText = data.items[1].author;
-    };
-
-    document.getElementsByClassName = function (cl) {
-      var retnode = [];
-      var myclass = new RegExp('\\b' + cl + '\\b');
-      var elem = this.getElementsByTagName('*');
-      for (var i = 0; i < elem.length; i++) {
-        var classes = elem[i].className;
-        if (myclass.test(classes)) { retnode.push(elem[i]); }
-      }
-      return retnode;
-    };
-
-    // For sample purpose, let's imagine this method is a callback
-    // for a request that provides you with your json data
-    var doRequest = function () {
-      var data = json;
-      var element = null;
-
-      var x = document.getElementsByClassName("news-story");
-
-      if ((null != x) && (0 < x.length)) {
-        element = x[0];
-      }
-      bindDataToHTML(data, element);
-    };
-
-    (function () {
-      doRequest();
-    })();
-
-  </script>
-  <!-- dynamic json data biding test -->
-
+  </article>
 
 </body>
 
@@ -162,3 +121,21 @@
 </footer>
 
 </html>
+
+<!-- navigation menu control -->
+<script>
+  $(document).ready(function () {
+    /* function called when you click of the button */
+    $("button").click(function () {
+      /* this if else to change the text in the button */
+      if ($("button").text() === "☰") {
+        $("button").text("X");
+      } else {
+        $("button").text("☰");
+      }
+
+      /* this function toggle the visibility of our "li" elements */
+      $("li").toggle("slow");
+    })
+  })
+</script>
