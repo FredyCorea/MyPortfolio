@@ -190,6 +190,16 @@ table {
     border: 1px solid #dddddd;
 }
 
+table th:nth-child(1) {
+    display: none;
+    /* visibility: hidden; */
+}
+
+table tr td:nth-child(1) {
+    display: none;
+    /* visibility: hidden */
+}
+
 
 /* “hover” selector, which syntax is element:hover */
 
@@ -266,11 +276,6 @@ stack the links on top of each other */
     ul {
         flex-direction: column;
     }
-    /* inpact the menu in reduce size display*/
-    /* li{
-    margin:1px;
-    background:#003366;
-  } */
     /* makes sure that the a tag will take the entire screen*/
     a {
         display: block;
