@@ -52,8 +52,15 @@ h1 {
 
 h1.reduced-height {
   color:#001a4d;
-  margin-left: 20px;
-  text-align: center;
+  margin-left: 5px;
+  /* text-align: center; */
+  line-height: 50%
+}
+
+h2.reduced-height {
+  color:#001a4d;
+  margin-left: 5px;
+  /* text-align: center; */
   line-height: 50%
 }
 
@@ -278,6 +285,11 @@ stack the links on top of each other */
     line-height: 50%;
     font-size: 12px;
     text-align: right;
+  }
+
+  p.normal-idented{
+    
+    text-indent: 5px; 
   }
 }
 
