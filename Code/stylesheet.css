@@ -20,6 +20,19 @@
   line-height: 20%
 }
 
+.column {
+  float: left;
+  /* width: 33.33%; */
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 nav{
   width: 100vw;
   background-color:#001a4d;
@@ -35,6 +48,13 @@ h1 {
   color:#001a4d;
   margin-left: 20px;
   text-align: center;
+}
+
+h1.reduced-height {
+  color:#001a4d;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 50%
 }
 
 p.center {
@@ -64,6 +84,20 @@ p.normal{
   line-height: 100%
 }
 
+p.reduced-hight{
+  line-height: 50%
+}
+
+p.reduced-hight-centered{
+  line-height: 50%;
+  text-align: center;
+}
+
+p.reduced-hight-right{
+  line-height: 50%;
+  text-align: right;
+}
+
 p.normal-idented{
   font-size: 100%;
   margin-top: o;
@@ -73,6 +107,8 @@ p.normal-idented{
   line-height: 100%;
   text-indent: 50px;
 }
+
+
 
 /* ul for main menu formatting */
 .navMenu{
@@ -162,7 +198,7 @@ button{
   margin-top: 1px;
 }
 
-div.reducedText{
+div.reduced-text{
   background-color: whitesmoke;
   padding: 12px;
 }
@@ -174,7 +210,8 @@ stack the links on top of each other */
 @media only screen and (max-width: 500px) 
 {
   
-  div.reducedText{
+  div.reduced-text{
+      background-color: whitesmoke;
       font-size: 12px;
       line-height: 85%
     }
@@ -235,6 +272,12 @@ stack the links on top of each other */
 
   .header-right {
     float: none;
+  }
+
+  p.reduced-hight-right{
+    line-height: 50%;
+    font-size: 12px;
+    text-align: right;
   }
 }
 
