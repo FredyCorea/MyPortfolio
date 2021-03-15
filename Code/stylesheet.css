@@ -1,7 +1,7 @@
 
 
 .logo1 {
-  color: navy;
+  color:#001a4d;
   font-size: 40px;
   font-weight: bold;
   text-align: left;
@@ -9,14 +9,14 @@
 }
 
 .logo2{
-  color:navy;
+  color:#001a4d;
   font-size: 30px;
   text-align: left;
   line-height: 20%
 }
 
 .logo3{
-  color:navy;
+  color:#001a4d;
   font-size: 25px;
   text-align: left;
   line-height: 20%
@@ -24,7 +24,7 @@
 
 nav{
   width: 100vw;
-  background-color:navy;
+  background-color:#001a4d;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-  color:#0040ff;
+  color:#001a4d;
   margin-left: 20px;
   text-align: center;
 }
@@ -45,7 +45,7 @@ ul {
   padding: 0;
   overflow: hidden;
   /* background-color: #0080ff;  */
-  background-color: navy;
+  background-color:#001a4d;
   /*this option by default dispose the elements in a row (flex-direction: row)*/
   display: flex;
 }
@@ -94,7 +94,7 @@ p {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color:navy;
+  background-color:#001a4d;
   color: whitesmoke;
   border: 1px solid #ddd;
   padding: 8px;
@@ -140,7 +140,7 @@ stack the links on top of each other */
 
   .logo2
   {
-    color:navy;
+    color:#001a4d;
     font-size: 25px;
     text-align: left;
     line-height: 20%
@@ -152,7 +152,7 @@ stack the links on top of each other */
     /* style the button */
     padding: 1vw;
     font-size: vh;
-    background-color:navy;
+    background-color:#001a4d;
     border:none;
     color:#C6E9FF;
     cursor: pointer;
@@ -171,7 +171,7 @@ stack the links on top of each other */
   /* deletes margin on top or bottom of the a tag*/
   li{
     margin:1px;
-    background: navy;
+    background:#001a4d;
   }
 
   /* makes sure that the a tag will take the entire screen*/
