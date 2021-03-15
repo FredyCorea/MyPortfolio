@@ -24,7 +24,7 @@
 
 nav{
   width: 100vw;
-  background-color: #0080ff;
+  background-color:navy;
 }
 
 body {
@@ -44,7 +44,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #0080ff; 
+  /* background-color: #0080ff;  */
+  background-color: navy;
   /*this option by default dispose the elements in a row (flex-direction: row)*/
   display: flex;
 }
@@ -127,6 +128,8 @@ tr:nth-child(even) {
 /* hide the toggle button from the nave menu */
 button{
   display: none;
+  margin-bottom: 1px;
+  margin-top: 1px;
 }
 
 /* Add media queries for responsiveness - 
@@ -135,31 +138,43 @@ stack the links on top of each other */
 @media only screen and (max-width: 500px) 
 {
 
+  .logo2
+  {
+    color:navy;
+    font-size: 25px;
+    text-align: left;
+    line-height: 20%
+  }
+
   /* makes the nav menu button visible */
   button{
     display: block;
     /* style the button */
     padding: 1vw;
-    font-size: 3vh;
-    background-color: #0040ff;
+    font-size: vh;
+    background-color:navy;
     border:none;
     color:#C6E9FF;
     cursor: pointer;
     /*this put the button on the left*/
     align-self: flex-start;
   }
+
   /*shows elements in a column*/
   ul{
-    flex-direction: column;;
+    flex-direction: column;
+    border-color: azure;
+    border-bottom-width: 1px;
+    background: silver;
   }
 
   /* deletes margin on top or bottom of the a tag*/
   li{
-    margin:0;
+    margin:1px;
+    background: navy;
   }
 
   /* makes sure that the a tag will take the entire screen*/
-
   a{
     display: block;
   }
@@ -170,6 +185,7 @@ stack the links on top of each other */
     display: block;
     text-align: left;
   }
+
   .header-right {
     float: none;
   }
