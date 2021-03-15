@@ -64,6 +64,16 @@ p.normal{
   line-height: 100%
 }
 
+p.normal-idented{
+  font-size: 100%;
+  margin-top: o;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 100%;
+  text-indent: 50px;
+}
+
 /* ul for main menu formatting */
 .navMenu{
   list-style-type: none;
