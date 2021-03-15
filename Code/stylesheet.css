@@ -136,17 +136,17 @@ stack the links on top of each other */
 {
 
   /* makes the nav menu button visible */
-  button{display: block;
-  /* style the button */
-  padding: 1vw;
-  font-size: 3vh;
-  background-color: #0040ff;
-  border:none;
-  color:#C6E9FF;
-  cursor: pointer;
-  /*this put the button on the left*/
-  align-self: flex-start;
-
+  button{
+    display: block;
+    /* style the button */
+    padding: 1vw;
+    font-size: 3vh;
+    background-color: #0040ff;
+    border:none;
+    color:#C6E9FF;
+    cursor: pointer;
+    /*this put the button on the left*/
+    align-self: flex-start;
   }
   /*shows elements in a column*/
   ul{
