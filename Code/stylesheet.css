@@ -49,8 +49,19 @@ p.medium{
   font-size: 150%;
 }
 
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
 p.normal{
   font-size: 100%;
+  /* display: block; */
+  margin-top: o;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 100%
 }
 
 /* ul for main menu formatting */
@@ -85,7 +96,6 @@ li.normal{
 
 }
 
-
 /* list element combined with a */
 li a {
   display: block;
@@ -111,31 +121,12 @@ button{
   margin-top: 10px;
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-
-/* table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  border: 1px solid black;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color:#001a4d;
-  color: whitesmoke;
-  border: 1px solid #ddd;
-  padding: 8px;
-} */
-
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 95%;
   border: 1px solid #dddddd;
 }
-
 
 /* “hover” selector, which syntax is element:hover */
 tr:hover,
@@ -175,6 +166,7 @@ stack the links on top of each other */
   
   div.reducedText{
       font-size: 12px;
+      line-height: 85%
     }
 
   /*reducte the font for the second title when using reduced display*/
