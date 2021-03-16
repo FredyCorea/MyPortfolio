@@ -49,6 +49,11 @@ nav {
     background-color: #001a4d;
 }
 
+/* .picture-container{
+    width: 200px;
+    height: 120px;
+} */
+
 body {
     background-color: azure;
     font-family: Arial, Helvetica, sans-serif;
@@ -79,22 +84,22 @@ p.center {
     text-align: center;
 }
 
-p.large {
+/* p.large {
     font-size: 300%;
-}
+} */
 
-p.medium {
+/* p.medium {
     font-size: 150%;
-}
+} */
 
 p {
-    font-family: verdana;
-    font-size: 20px;
+    /* font-family: verdana;
+    font-size: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p.normal {
     font-size: 100%;
-    /* display: block; */
     margin-top: o;
     margin-bottom: 0;
     margin-left: 0;
@@ -126,9 +131,46 @@ p.normal-idented {
     text-indent: 50px;
 }
 
+/* links formatting */
+/* a:link {
+    color: red;
+    font-size: 15px;
+  }
+   */
+/* visited link */
+/* a:visited {
+    color: lightblue;
+  } */
+  
+/* mouse over link */
+/* a:hover {
+    color: peru;
+  }
+   */
+/* selected link */
+/* a:active {
+    color: blue;
+  } */
+
+ a.footer:link{
+    color:blue;
+    font-size: 15px;
+}
+
+a.footer:hover{
+    color: red;
+}
+
+a.header:link{
+    color: black;
+    font-size: 15px;
+    text-align: right;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
 
 /* ul for main menu formatting */
-
 .navMenu {
     list-style-type: none;
     margin: 0;
@@ -247,12 +289,12 @@ div.reduced-text {
 /* Add media queries for responsiveness - 
 when the screen is 500px wide or less, 
 stack the links on top of each other */
-
 @media only screen and (max-width: 500px) {
+
     div.reduced-text {
         background-color: whitesmoke;
         font-size: 12px;
-        line-height: 85%
+        /* line-height: 100% */
     }
     /*reducte the font for the second title when using reduced display*/
     .logo2 {
@@ -311,18 +353,32 @@ stack the links on top of each other */
         text-align: left;
     }
 
+    a.header:link{
+        color: black;
+        font-size: 12px;
+        line-height: 95%
+    }
+
+    /* Resize images */
+    .picture-container img {
+        width: 50%;
+        height: auto;
+    }
+
+    a.footer:link{
+        font-size: 12px;
+        line-height: 50%
+    }
+
 }
 
-#footer {
-    height: 50px;
-    /* the footer's total height */
-}
 
-#footer-content {
-    background-color: #003366;
-    /* border: 1px solid #ab47bc; */
-    height: 32px;
-    /* height + top/bottom paddding + top/bottom border must add up to footer height */
-    padding: 8px;
-    color: aquamarine;
-}
+footer {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: "Courier New", monospace; */
+    text-align: center;
+    font-size: 12px; 
+    padding: 3px;
+    background-color: #e5ffff;
+    color: #003366;
+  }

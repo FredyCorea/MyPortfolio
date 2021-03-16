@@ -15,22 +15,37 @@
 <header>
 
   <div class="header">
+
     <div class="row">
+
       <div class="column1">
         <p class="logo1">Fredy R. Corea</p>
         <p class="logo2">Software Designer and Developer</p>
         <p class="logo3">Professional Porfolio</p>
       </div>
+
       <div class="column2">
         <p class="reduced-hight-right">12365 SW 255th Terrace</p>
         <p class="reduced-hight-right">Homestead FL, 330326</p>
-        <p class="reduced-hight-right">305 809 0938, 786 473 0207</p>
-        <p class="reduced-hight-right">fredycorea@egstek.com, fredycorea@hotmail.com</p>
+        <!-- <p class="reduced-hight-right">305 809 0938, 786 473 0207</p>
+        <p class="reduced-hight-right">fredycorea@egstek.com, fredycorea@hotmail.com</p> -->
+        <!-- <p class="reduced-hight-right"> <a href="mailto:fredycorea@hotmail.com" class="header">fredycorea@hotmail.com</a> </p> -->
+
+        <p class="reduced-hight-right">
+          <a href="mailto:fredycorea@hotmail.com" class="header">fredycorea@egstek.com</a>
+        </p>
+        <p class="reduced-hight-right">
+          <a href="tel:3058090938" class="header">305-809-0938</a>
+        </p>
+
       </div>
+
     </div>
+
   </div>
 
   <body>
+
     <nav role="navigation" aria-label="main menu">
       <ul class="navMenu">
         <!-- Button to toggle menu -->
@@ -50,14 +65,8 @@
       var lastName = peopleList[0].lastName;
     </script>
 
-
-
-    <!-- <h1>My Porfolio Website</h1> -->
-    <!-- <p>A website created by me.</p> -->
-    <!-- <img src="Images/myself.jpg" alt="Portrait" width="85" height="100"> -->
-
-    <div>
-      <img src="Images/myself.jpg" alt="Portrait" align="left" style="vertical-align:middle;margin:50px 50px">
+    <div class="picture-container">
+      <img src="Images/myself.jpg" alt="Portrait" align="left" style="vertical-align:middle;margin:20px 20px">
     </div>
 
     <article>
@@ -117,28 +126,23 @@
           read</p>
 
 
-        <p class="normal">
+        <!-- <p class="normal"> -->
+        <p>
           I can produce excellent results without the need for constant supervision. With decades of experience, I
           developed a keen sense of responsibility and self-control and the capability to sucessfully achieve any given
-          goals. But I also
-          retain that teamwork is crucial nowadays in business and the information technology worlds. I enjoy when all
-          parts come
-          together due to the process of working collaboratively with a group of people to achieve success.
+          goals. But I also retain that teamwork is crucial nowadays in business and the information technology worlds.
+          I enjoy when all
+          parts come together due to the process of working collaboratively with a group of people to achieve success.
           While working with small companies, I learned to develop the capability to be multifaceted; if the company
-          needs
-          me to participate in several aspects of a project, I am always open to the experience.
+          needs me to participate in several aspects of a project, I am always open to the experience.
         </p>
 
         <p class="normal">
           Being a team player, I am always looking for alternatives to bring added value to the group, and always
-          willing
-          to
-          help other mates when needed. I am also open to suggestions from collaborators and always willing to
-          compromise
-          when
-          needed. I retain it is essential to listen to other people's opinions and integrate their ideas and
-          recommendations
-          in possible ways.
+          willing tohelp other mates when needed. I am also open to suggestions from collaborators and always willing to
+          compromise when needed. I retain it is essential to listen to other people's opinions and integrate their
+          ideas and
+          recommendations in possible ways.
         </p>
 
       </div>
@@ -146,14 +150,25 @@
 
   </body>
 
-  <footer id="footer">
-    <div id="footer-content">
-      <label> Address: </label>
-      <label> Phone: </label>
-      <label> Email: </label>
-      <!-- <a href="/about/privacy">Privacy Policy</a>
-    <a href="/about/legal">Terms of Service</a> -->
-    </div>
+  <!-- <p class="reduced-hight-right">305 809 0938, 786 473 0207</p>
+  <p class="reduced-hight-right">fredycorea@egstek.com, fredycorea@hotmail.com</p>
+   -->
+  <footer>
+    <!-- <p reduced-hight-centered> Phones: 305 809 0938, 786 473 0207</p> -->
+
+    <p reduced-hight-centered>
+      <a href="mailto:fredycorea@hotmail.com" class="footer">fredycorea@hotmail.com</a>
+      <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
+
+      <a href="mailto:fredycorea@hotmail.com" class="footer">fredycorea@egstek.com</a>
+      <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
+
+      <a href="tel:3058090938" class="footer">305-809-0938</a>
+      <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
+
+      <a href="tel:7864730207" class="footer">786-473-0207</a>
+    </p>
+
   </footer>
 
 </html>
