@@ -46,7 +46,7 @@ function GetWorkHistoryData() {
         {
             "PagePath": "whCosta.html",
             "Company": "Costa Cruises, NV",
-            "ImagePath": "Images/Costa.png",
+            "ImagePath": "Images/CostaCruises.png",
             "From": "01/01/2020",
             "Until": "01/01/2021",
             "Title": "Lead of Development"
