@@ -22,10 +22,19 @@
 
 .column {
     float: left;
-    /* width: 33.33%; */
     padding: 5px;
 }
 
+.column1 {
+    float: left;
+    /* width: 33.33%; */
+    padding: 5px;
+}
+.column2 {
+    float: right;
+    /* width: 33.33%; */
+    padding: 5px;
+}
 
 /* Clear floats after image containers */
 
@@ -301,6 +310,7 @@ stack the links on top of each other */
         margin-left: 20px;
         text-align: left;
     }
+
 }
 
 #footer {
