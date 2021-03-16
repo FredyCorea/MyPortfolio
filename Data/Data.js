@@ -16,22 +16,22 @@ function GetWorkHistoryData() {
             "Company": "Global Benefits Group, Inc",
             "From": "03/02/2020",
             "Until": "01/15/2021",
-            "Title": "Analyst/Programmer"
+            "Title": "Applications Support Engineer "
         },
         {
             "PagePath": "whOracle.html",
             "ImagePath": "Images/oracle.png",
             "Company": "Oracle",
-            "From": "01/01/2020",
-            "Until": "01/01/2021",
-            "Title": "Lead of Development"
+            "From": "05/02/2016",
+            "Until": "02/13/2019",
+            "Title": "Software Developer Level 5 and Functional Architect "
         },
         {
             "PagePath": "whRamstad.html",
             "ImagePath": "Images/ranstad.png",
             "Company": "Ranstad",
-            "From": "01/01/2020",
-            "Until": "01/01/2021",
+            "From": "06/26/2015",
+            "Until": "05/01/2016",
             "Title": "Lead of Development"
         },
 
@@ -39,26 +39,26 @@ function GetWorkHistoryData() {
             "PagePath": "whFidelio.html",
             "ImagePath": "Images/Fidelio.png",
             "Company": "Fidelio Cruises",
-            "From": "01/01/2020",
-            "Until": "01/01/2021",
-            "Title": "Lead of Development"
+            "From": "04/01/2096",
+            "Until": "06/25/2015",
+            "Title": "Lead of Development and Developer"
         },
         {
             "PagePath": "whCosta.html",
             "Company": "Costa Cruises, NV",
-            "ImagePath": "Images/CostaCruises.png",
-            "From": "01/01/2020",
-            "Until": "01/01/2021",
-            "Title": "Lead of Development"
+            "ImagePath": "Images/Costa.png",
+            "From": "01/09/1999",
+            "Until": "11/01/2005",
+            "Title": "Analyst/Programmer"
         },
 
         {
             "PagePath": "whZerbone.html",
             "Company": "Zerbone Catering",
             "ImagePath": "Images/Zerbone.jpg",
-            "From": "01/01/2020",
-            "Until": "01/01/2021",
-            "Title": "Lead of Development"
+            "From": "01/01/1994",
+            "Until": "01/01/1999",
+            "Title": "Analyst/Programmer"
         },
 
     ]
