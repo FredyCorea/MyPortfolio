@@ -281,7 +281,7 @@ button {
 }
 
 div.reduced-text {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     padding: 12px;
 }
 
@@ -292,7 +292,7 @@ stack the links on top of each other */
 @media only screen and (max-width: 500px) {
 
     div.reduced-text {
-        background-color: whitesmoke;
+        /* background-color: whitesmoke; */
         font-size: 12px;
         /* line-height: 100% */
     }
