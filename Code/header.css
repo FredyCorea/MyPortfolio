@@ -2,9 +2,9 @@
 .header {
     overflow: hidden;
     background-color: #f1f1f1;
-    /* padding: 20px 10px; */
-    /* top left bottom right*/
-    padding:  10px 10px 0px 10px;
+    padding:  10px 10px 5px 10px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   
   /* Style the header links */

@@ -26,20 +26,24 @@
     /* padding: 5px; */
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .column-header-1 {
     float: left;
     /* width: 33.33%; */
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .column-header-2 {
     float: right;
     /* width: 33.33%; */
-    padding: 5px;
+    /* padding: 5px; */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* Clear floats after image containers */
@@ -298,7 +302,7 @@ stack the links on top of each other */
 
     div.reduced-text {
         font-size: 12px;
-        padding: 0px;
+        padding:  2px 2px 2px 2px;
         margin-left: 3px;
     }
 
