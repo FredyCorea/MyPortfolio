@@ -147,7 +147,9 @@ p.normal-idented {
 
 a.footer:link{
     color:blue;
-    font-size: 15px;
+    font-size: 12px;
+    line-height: 50%;
+    text-align: center;
 }
 
 a.footer:hover{
@@ -298,7 +300,7 @@ div{
 /* Add media queries for responsiveness - 
 when the screen is 500px wide or less, 
 stack the links on top of each other */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
 
     div.reduced-text {
         font-size: 12px;
@@ -365,6 +367,7 @@ stack the links on top of each other */
         float: none;
     }
 
+    /* 50% hight */
     p.reduced-hight-right {
         line-height: 50%;
         font-size: 12px;

@@ -39,11 +39,8 @@ function populateWHTable(whList) {
             //<img src="Images/gbg2.png" alt="logo" style="width:100%">
             if (whColumns[j] == "ImagePath") {
 
-                //imagePath = imagePath + whList[i].Company + "</td>";
-                // var imagePath = "<img src=" + "'" + whList[j].ImagePath + "'>";
-                var imagePath = "<img src=" + "'" + whList[i].ImagePath + "'>";
-
-                cell.innerHTML = imagePath;
+                // var imagePath = "<img src=" + "'" + whList[i].ImagePath + "'>";
+                // cell.innerHTML = imagePath;
                 temp = cell.innerHTML; //for stop only, toeval cell.innerHTML, remove it!
 
             } else if (whColumns[j] != "Company") {

@@ -12,7 +12,7 @@ function GetWorkHistoryData() {
 
     var wh = [{
             "PagePath": "whGbg.html",
-            "ImagePath": "Images/gbg2.png",
+            // "ImagePath": "Images/gbg2.png",
             "Company": "Global Benefits Group, Inc",
             "From": "03/02/2020",
             "Until": "01/15/2021",
@@ -20,7 +20,7 @@ function GetWorkHistoryData() {
         },
         {
             "PagePath": "whOracle.html",
-            "ImagePath": "Images/oracle.png",
+            // "ImagePath": "Images/oracle.png",
             "Company": "Oracle",
             "From": "05/02/2016",
             "Until": "02/13/2019",
@@ -28,7 +28,7 @@ function GetWorkHistoryData() {
         },
         {
             "PagePath": "whRamstad.html",
-            "ImagePath": "Images/ranstad.png",
+            // "ImagePath": "Images/ranstad.png",
             "Company": "Ranstad",
             "From": "06/26/2015",
             "Until": "05/01/2016",
@@ -37,7 +37,7 @@ function GetWorkHistoryData() {
 
         {
             "PagePath": "whFidelio.html",
-            "ImagePath": "Images/Fidelio.png",
+            // "ImagePath": "Images/Fidelio.png",
             "Company": "Fidelio Cruises",
             "From": "04/01/2096",
             "Until": "06/25/2015",
@@ -45,8 +45,8 @@ function GetWorkHistoryData() {
         },
         {
             "PagePath": "whCosta.html",
+            // "ImagePath": "Images/Costa.png",
             "Company": "Costa Cruises, NV",
-            "ImagePath": "Images/Costa.png",
             "From": "01/09/1999",
             "Until": "11/01/2005",
             "Title": "Analyst/Programmer"
@@ -54,8 +54,8 @@ function GetWorkHistoryData() {
 
         {
             "PagePath": "whZerbone.html",
+            // "ImagePath": "Images/Zerbone.jpg",
             "Company": "Zerbone Catering",
-            "ImagePath": "Images/Zerbone.jpg",
             "From": "01/01/1994",
             "Until": "01/01/1999",
             "Title": "Analyst/Programmer"
