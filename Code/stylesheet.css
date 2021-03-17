@@ -4,6 +4,7 @@
     font-weight: bold;
     text-align: left;
     line-height: 10%
+
 }
 
 .logo2 {
@@ -34,6 +35,7 @@
     /* width: 33.33%; */
     padding: 5px;
 }
+
 .column-header-2 {
     float: right;
     /* width: 33.33%; */
@@ -53,10 +55,10 @@ nav {
     background-color: #001a4d;
 }
 
-/* .picture-container{
-    width: 200px;
-    height: 120px;
-} */
+.picture-container{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
 body {
     background-color: azure;
@@ -68,6 +70,10 @@ h1 {
     color: #001a4d;
     margin-left: 20px;
     text-align: center;
+}
+
+h1.h1-no-vislble{
+    color: white;
 }
 
 h1.reduced-height {
@@ -135,28 +141,7 @@ p.normal-idented {
     text-indent: 50px;
 }
 
-/* links formatting */
-/* a:link {
-    color: red;
-    font-size: 15px;
-  }
-   */
-/* visited link */
-/* a:visited {
-    color: lightblue;
-  } */
-  
-/* mouse over link */
-/* a:hover {
-    color: peru;
-  }
-   */
-/* selected link */
-/* a:active {
-    color: blue;
-  } */
-
- a.footer:link{
+a.footer:link{
     color:blue;
     font-size: 15px;
 }
@@ -173,6 +158,13 @@ a.header:link{
     padding: 0 0 0 0;
 }
 
+a.main-menu:link{
+    /* color: black; */
+    /* font-size: 15px; */
+    /* text-align: right; */
+    margin: 0 0 0 0;
+    padding: 10 10 10 10;
+}
 
 /* ul for main menu formatting */
 .navMenu {
@@ -286,9 +278,18 @@ button {
 
 div.reduced-text {
     /* background-color: whitesmoke; */
-    padding: 12px;
+    /* padding: 12px; */
+    padding:  10px 10px 0px 10px;
 }
 
+div{
+    word-wrap: break-word;
+}
+
+.soft-skills{
+    text-align: left;
+    padding: 0px;
+}
 
 /* Add media queries for responsiveness - 
 when the screen is 500px wide or less, 
@@ -296,10 +297,22 @@ stack the links on top of each other */
 @media only screen and (max-width: 500px) {
 
     div.reduced-text {
-        /* background-color: whitesmoke; */
         font-size: 12px;
-        /* line-height: 100% */
+        padding: 0px;
+        margin-left: 3px;
     }
+
+    .soft-skills{
+        text-align: left;
+        padding: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    h1.h1-no-vislble{
+        color: white;
+    }
+
     /*reducte the font for the second title when using reduced display*/
     .logo2 {
         color: #001a4d;
@@ -308,6 +321,7 @@ stack the links on top of each other */
         text-align: left;
         line-height: 20%
     }
+
     .logo3 {
         color: #003366;
         font-size: 90%;
@@ -335,22 +349,27 @@ stack the links on top of each other */
     a {
         display: block;
     }
+
     .header a {
         float: none;
         display: block;
         text-align: left;
     }
+
     .header-right {
         float: none;
     }
+
     p.reduced-hight-right {
         line-height: 50%;
         font-size: 12px;
         text-align: right;
     }
+
     p.normal-idented {
         text-indent: 5px;
     }
+
     h1 {
         color: #001a4d;
         margin-left: 20px;
@@ -367,6 +386,10 @@ stack the links on top of each other */
     .picture-container img {
         width: 50%;
         height: auto;
+    }
+
+    .picture-container{
+        text-align: center;
     }
 
     a.footer:link{

@@ -16,6 +16,7 @@
 
   <div class="header">
 
+    <!-- Header Table -->
     <div class="row">
 
       <div class="column-header-1">
@@ -41,67 +42,63 @@
       </div>
 
     </div>
+     <!-- Header Table -->
 
   </div>
 
   <body>
 
-    <nav role="navigation" aria-label="main menu">
+    <!-- <nav role="navigation" aria-label="main menu"> -->
       <ul class="navMenu">
         <!-- Button to toggle menu -->
         <button>X</button>
-        <li><a href="Technologies.html"> Technologies </a> </li>
-        <li><a href="WorkHistory.html">Work History </a> </li>
-        <li><a href="Portfoliio.html"> Portfolio </a> </li>
-        <li><a href="Education.html">Formal Education </a></li>
-        <li><a href="References.html">References </a></li>
+        <li><a href="Technologies.html" class="main-menu" > Technologies </a> </li>
+        <li><a href="WorkHistory.html" class="main-menu" >Work History </a> </li>
+        <li><a href="Portfoliio.html" class="main-menu"> Portfolio </a> </li>
+        <li><a href="Education.html" class="main-menu">Formal Education </a></li>
+        <li><a href="References.html" class="main-menu">References </a></li>
       </ul>
-    </nav>
+    <!-- </nav> -->
 
-
-    <script type="text/javascript">
+    <!-- For testign purposes -->
+    <!-- <script type="text/javascript">
       var peopleList = GetPeopleData();
       var name = peopleList[0].firstName;
       var lastName = peopleList[0].lastName;
-    </script>
+    </script> -->
+    <!-- test -->
 
     <div class="picture-container">
       <img src="Images/myself.jpg" alt="Portrait" align="left" style="vertical-align:middle;margin:20px 20px">
     </div>
 
-    <article>
-
-      <h1>Soft Skills</h1>
-
       <div class="row">
 
         <div class="column-body">
 
+          <div class="soft-skills">
+            <h1>Soft Skills</h1>
+          </div>
+
           <div class="reduced-text">
-            <!-- <p class="normal">Change Agility adaption</p> -->
+
             <p class="normal-idented"> <img src="Images/bullet_green.png"
                 style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">Change Agility
               adaption</p>
-
-            <!-- <p class="normal">Collaboration Communicating for Impact</p> -->
 
             <p class="normal-idented"> <img src="Images/bullet_green.png"
                 style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">Collaboration
               Communicating for Impact</p>
 
-            <!-- <p class="normal">Competitive Edge</p> -->
-
             <p class="normal-idented"> <img src="Images/bullet_green.png"
                 style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">Competitive Edge
             </p>
 
-            <!-- <p class="normal">Mastering Complexity</p> -->
             <p class="normal-idented"> <img src="Images/bullet_green.png"
                 style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">Mastering
               Complexity
             </p>
 
-            <!-- <p class="normal">Analytical Skillss</p> -->
             <p class="normal-idented"> <img src="Images/bullet_green.png"
                 style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">Analytical Skills
             </p>
@@ -111,6 +108,11 @@
         </div>
 
         <div class="column-body">
+
+          <div class="soft-skills">
+            <h1 class="h1-no-vislble">.</h1>
+          </div>
+
           <div class="reduced-text">
 
             <!-- <p class="normal">Critical Thinking Skillss</p> -->
@@ -148,29 +150,24 @@
 
       <div class="reduced-text">
 
-
-
-        <!-- <p class="normal"> -->
-        <p>
+        <p class="justified">
           I can produce excellent results without the need for constant supervision. With decades of experience, I
           developed a keen sense of responsibility and self-control and the capability to sucessfully achieve any given
           goals. But I also retain that teamwork is crucial nowadays in business and the information technology worlds.
-          I enjoy when all
-          parts come together due to the process of working collaboratively with a group of people to achieve success.
+          I enjoy when all parts come together due to the process of working collaboratively with a group of people to achieve success.
           While working with small companies, I learned to develop the capability to be multifaceted; if the company
           needs me to participate in several aspects of a project, I am always open to the experience.
         </p>
 
-        <p class="normal">
+        <p>
           Being a team player, I am always looking for alternatives to bring added value to the group, and always
           willing tohelp other mates when needed. I am also open to suggestions from collaborators and always willing to
           compromise when needed. I retain it is essential to listen to other people's opinions and integrate their
-          ideas and
-          recommendations in possible ways.
+          ideas and recommendations in possible ways.
         </p>
 
       </div>
-    </article>
+
 
   </body>
 
@@ -199,18 +196,35 @@
 
 <!-- navigation menu control -->
 <script>
-  $(document).ready(function () {
-    /* function called when you click of the button */
-    $("button").click(function () {
-      /* this if else to change the text in the button */
-      if ($("button").text() === "☰") {
-        $("button").text("X");
-      } else {
-        $("button").text("☰");
-      }
 
-      /* this function toggle the visibility of our "li" elements */
-      $("li").toggle("slow");
+  {
+
+    //add CR to the text
+    // function addCRetun() {
+    //   var ot1 = document.getElementById("sk").textContent;
+    //   document.getElementById("sk").innerHTML = "\r\n" + "###" + document.getElementById("sk").innerHTML;
+
+    //   //var temp = " ";
+    //   // document.body.appendChild(ot);
+    //   var ot2 = document.getElementById("sk").textContent;
+    //   var temp = " ";
+    //   return;
+    // }
+
+    $(document).ready(function () {
+      /* function called when you click of the button */
+      $("button").click(function () {
+        /* this if else to change the text in the button */
+        if ($("button").text() === "☰") {
+          $("button").text("X");
+        } else {
+          $("button").text("☰");
+        }
+
+        /* this function toggle the visibility of our "li" elements */
+        $("li").toggle("slow");
+      })
     })
-  })
+
+  }
 </script>
