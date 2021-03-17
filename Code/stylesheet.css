@@ -294,7 +294,7 @@ div{
 /* Add media queries for responsiveness - 
 when the screen is 500px wide or less, 
 stack the links on top of each other */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 
     div.reduced-text {
         font-size: 12px;
@@ -328,6 +328,7 @@ stack the links on top of each other */
         text-align: left;
         line-height: 20%
     }
+
     /* makes the X nav menu button visible */
     button {
         display: block;
@@ -391,6 +392,8 @@ stack the links on top of each other */
     .picture-container{
         text-align: center;
     }
+
+
 
     a.footer:link{
         font-size: 12px;
