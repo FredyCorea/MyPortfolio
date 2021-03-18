@@ -54,6 +54,20 @@ html, body {
     margin-right: 5px;
 }
 
+
+.newspaper {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid lightblue;
+  }
+  h1 {
+    column-span: all;
+  }
+  h2 {
+    column-span: all;
+  }
+
+
 /* Clear floats after image containers */
 
 .row::after {
@@ -268,7 +282,7 @@ table {
 
 
 /*hide row in the work history table*/
-.whtable tr td:nth-child(1) {
+.whTable tr td:nth-child(1) {
     display: none;
 }
 
@@ -433,6 +447,18 @@ stack the links on top of each other */
         font-size: 12px;
         line-height: 50%
     }
+
+    .newspaper {
+        column-count: 2;
+        column-gap: 20px;
+        column-rule: 1px solid lightblue;
+      }
+      h1 {
+        column-span: all;
+      }
+      h2 {
+        column-span: all;
+      }
 
 }
 
