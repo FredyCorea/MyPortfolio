@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="Code/stylesheet.css" media="screen" rel="styleSheet" />
+    <link type="text/css" href="Code/header.css" rel="styleSheet" media="screen" />
+    <script src="Code/jquery-3.4.1.min.js"></script>
+    <script src="Data/Data.js"></script>
+    <script src="Code/footer.js" type="text/javascript" defer></script>
+</head>
+
+
+<h2>Modal Example</h2>
+
+<!-- Trigger/Open The Modal -->
+<a href="#" id="myLink1">Open Modal One</a>
+<a href="#" id="myLink2">Open Modal Two</a>
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>my modal window ONE is open! </p>
+        <p>IT WORKS! </p>
+    </div>
+</div>
+
+<div id="myModal2" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>my modal window TWO is open! </p>
+        <p>IT WORKS! </p>
+    </div>
+</div>
+
+</html>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal1");
+    var modal = document.getElementById("myModal2");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myLink1");
+    var btn = document.getElementById("myLink2");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
