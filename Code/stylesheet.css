@@ -185,10 +185,21 @@ a.footer:link{
     font-size: 12px;
     line-height: 50%;
     text-align: center;
+    text-decoration: none;
 }
 
+a:link{
+    /* color:red; */
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #001a4d;
+    color:#C6E9FF;
+  }
+
 a.footer:hover{
-    color: red;
+    color:white;
 }
 
 a.header:link{
@@ -444,8 +455,8 @@ stack the links on top of each other */
     }
 
     a.footer:link{
-        font-size: 12px;
-        line-height: 50%
+        font-size: 15px;
+        /* line-height: 30% */
     }
 
     .newspaper {
