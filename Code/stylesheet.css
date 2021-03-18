@@ -1,3 +1,11 @@
+html, body {
+    height: 100%;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
 .logo1 {
     color: #003366;
     font-size: 40px;
@@ -165,9 +173,6 @@ a.header:link{
 }
 
 a.main-menu:link{
-    /* color: black; */
-    /* font-size: 15px; */
-    /* text-align: right; */
     margin: 0 0 0 0;
     padding: 10 10 10 10;
 }

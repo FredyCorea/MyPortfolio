@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Main Menu-->
 <head>
   <title>Web Portfolio</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link type="text/css" href="Code/stylesheet.css" media="screen" rel="styleSheet" />
   <link type="text/css" href="Code/header.css" rel="styleSheet" media="screen" />
-  <script src="Data/Data.js"></script>
-  <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
   <script src="Code/jquery-3.4.1.min.js"></script>
+  <script src="Data/Data.js"></script>
+  <script src="Code/footer.js" type="text/javascript" defer></script>
 </head>
 
 <header>
@@ -21,24 +22,7 @@
       <p class="logo2">Software Designer and Developer</p>
       <p class="logo3">Professional Porfolio</p>
     </div>
-
-    <!-- Header Table -->
-    <!-- <div class="row"> -->
-    <!-- 
-      <div class="column-header-2">
-        <p class="reduced-hight-right">12365 SW 255th Terrace</p>
-        <p class="reduced-hight-right">Homestead FL, 330326</p>
-        <p class="reduced-hight-right">
-          <a href="mailto:fredycorea@hotmail.com" class="header">fredycorea@egstek.com</a>
-        </p>
-        <p class="reduced-hight-right">
-          <a href="tel:3058090938" class="header">305-809-0938</a>
-        </p> -->
-    <!-- 
-      </div> -->
-
   </div>
-  <!-- Header Table -->
 </header>
 
 <body>
@@ -63,6 +47,7 @@
     </script> -->
   <!-- test -->
 
+  <!--Fotography here-->
   <div class="picture-container">
     <img src="Images/myself.jpg" alt="Portrait" align="left" style="vertical-align:middle;margin:20px 20px">
   </div>
@@ -166,16 +151,9 @@
 
 </body>
 
-<!-- <p class="reduced-hight-right">305 809 0938, 786 473 0207</p>
-  <p class="reduced-hight-right">fredycorea@egstek.com, fredycorea@hotmail.com</p>
-   -->
+<!--  Move to a resubale component: footer.js
 <footer>
-  <!-- <p reduced-hight-centered> Phones: 305 809 0938, 786 473 0207</p> -->
-
-
   <p class="reduced-hight-centered">12365 SW 255th Terrace. Homestead FL, 330326</p>
-
-
   <a href="mailto:fredycorea@hotmail.com" class="footer">fredycorea@hotmail.com</a>
   <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
 
@@ -186,8 +164,10 @@
   <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
 
   <a href="tel:7864730207" class="footer">786-473-0207</a>
+</footer> -->
 
-
+<footer>
+  <footer-component></footer-component>
 </footer>
 
 </html>
