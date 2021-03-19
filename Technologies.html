@@ -10,9 +10,10 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
-
-
 
 <header>
     <div class="header">
@@ -25,10 +26,15 @@
 </header>
 
 <body>
+    <!-- call navigation componnent -->
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+    <!-- call navigation componnent -->
+
     <div class="reduced-text">
 
         <h1 class="reduced-height">Technologies Stack</h1>
-
 
         <table>
             <tr>
@@ -38,7 +44,6 @@
 
             <tr>
                 <td colspan="2" id="colspan-back-color">
-
                     <p class="normal-centered">
                         Languages and Architectures
                     </p>
@@ -196,8 +201,6 @@
                 <td>JIRA</td>
             </tr>
 
-
-
             <tr>
                 <td colspan="2" id="colspan-back-color">
 
@@ -227,11 +230,14 @@
 
     </div>
 
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
+
 </body>
-
-</html>
-
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

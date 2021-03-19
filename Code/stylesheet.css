@@ -1,6 +1,4 @@
-html, body {
-    height: 100%;
-  }
+
 
   main {
     flex: 1 0 auto;
@@ -83,7 +81,8 @@ html, body {
 }
 
 nav {
-    width: 100vw;
+    /*width: 100vw; */
+    width: 100%;
     background-color: #001a4d;
 }
 
@@ -230,6 +229,7 @@ a.main-menu:link{
     background-color: #001a4d;
     /*this option by default dispose the elements in a row (flex-direction: row)*/
     display: flex;
+    /* width: 100%; */
 }
 
 
@@ -408,10 +408,12 @@ stack the links on top of each other */
         /*this put the button on the left*/
         align-self: flex-start;
     }
+
     /*shows elements in a column*/
     ul {
         flex-direction: column;
     }
+
     /* makes sure that the a tag will take the entire screen*/
     a {
         display: block;
@@ -479,68 +481,30 @@ stack the links on top of each other */
         column-gap: 20px;
         column-rule: 1px solid lightblue;
       }
+      
       h1 {
         column-span: all;
       }
+
       h2 {
         column-span: all;
       }
 
 }
 
-
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-
-
-footer {
+/* fixed footer */
+.footer {
     /* font-family: Arial, Helvetica, sans-serif; */
     /* font-family: "Courier New", monospace; */
-    text-align: center;
+    /* text-align: center; */
     font-size: 12px; 
     padding: 3px;
     background-color: #e5ffff;
     color: #003366;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
-    width: 100%;
-    height: 2.5rem;
+    /* width: 100%; */
+    /* height: 2.5rem; */
+    /* position:sticky; */
+    
   }

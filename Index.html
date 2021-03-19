@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--Main Menu-->
 <head>
   <title>Web Portfolio</title>
   <meta charset="UTF-8">
@@ -11,12 +10,12 @@
   <script src="Code/jquery-3.4.1.min.js"></script>
   <script src="Data/Data.js"></script>
   <script src="Code/footer.js" type="text/javascript" defer></script>
+  <script src="Code/nav.js" type="text/javascript" defer></script>
+  <script src="Code/navButtonToggle.js"></script>
 </head>
 
 <header>
-
   <div class="header">
-
     <div class="column-header-1">
       <p class="logo1">Fredy R. Corea</p>
       <p class="logo2">Software Designer and Developer</p>
@@ -25,27 +24,30 @@
   </div>
 </header>
 
+<!-- 
+  <body style="text-align:center"> -->
+
 <body>
 
-  <!-- <nav role="navigation" aria-label="main menu"> -->
-  <ul class="navMenu">
-    <!-- Button to toggle menu -->
+  <!--Convert to nav-compnent-->
+
+  <!-- <ul class="navMenu">
     <button>X</button>
+    <li><a href="Index.html" class="main-menu">Home </a> </li>
     <li><a href="Technologies.html" class="main-menu">Technologies </a> </li>
     <li><a href="WorkHistory.html" class="main-menu">Work History </a> </li>
     <li><a href="Portfoliio.html" class="main-menu">Portfolio </a> </li>
     <li><a href="Education.html" class="main-menu">Education </a></li>
     <li><a href="References.html" class="main-menu">References </a></li>
-  </ul>
-  <!-- </nav> -->
+  </ul> -->
 
-  <!-- For testign purposes -->
-  <!-- <script type="text/javascript">
-      var peopleList = GetPeopleData();
-      var name = peopleList[0].firstName;
-      var lastName = peopleList[0].lastName;
-    </script> -->
-  <!-- test -->
+
+  <!-- call navigation componnent -->
+  <Nav>
+    <nav-component></nav-component>
+  </nav>
+  <!-- call navigation componnent -->
+
 
   <!--Fotography here-->
   <div class="picture-container">
@@ -84,9 +86,7 @@
         <p class="normal-idented"> <img src="Images/bullet_green.png"
             style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">Analytical Skills
         </p>
-
       </div>
-
     </div>
 
     <div class="column-body">
@@ -97,29 +97,24 @@
 
       <div class="reduced-text">
 
-        <!-- <p class="normal">Critical Thinking Skillss</p> -->
         <p class="normal-idented"> <img src="Images/bullet_green.png"
             style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">Critical Thinking
           Skills</p>
 
-        <!-- <p class="normal">Performance Drive & Execution</p> -->
         <p class="normal-idented"> <img src="Images/bullet_green.png"
             style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">Performance Drive
           and Execution</p>
 
-        <!-- <p class="normal">English: speaks, read and write</p> -->
         <p class="normal-idented"> <img src="Images/bullet_green.png"
             style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">English: speaks,
           read
           and write</p>
 
-        <!-- <p class="normal">Spanish: speaks, read and write</p> -->
         <p class="normal-idented"> <img src="Images/bullet_green.png"
             style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">Spanish: speaks,
           read
           and write</p>
 
-        <!-- <p class="normal">Italian: speaks and read</p> -->
         <p class="normal-idented"> <img src="Images/bullet_green.png"
             style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">Italian: speaks and
           read</p>
@@ -132,39 +127,30 @@
 
     <p>
       I can produce excellent results without the need for constant supervision. With decades of experience, I
-      developed a keen sense of responsibility and self-control and the capability to sucessfully achieve any given
+      developed a keen sense of responsibility and self-control and also the capability to sucessfully achieve any given
       goals. But I also retain that teamwork is crucial nowadays in business and the information technology worlds.
+
+      <br>
       I enjoy when all parts come together due to the process of working collaboratively with a group of people to
-      achieve success.
-      While working with small companies, I learned to develop the capability to be multifaceted; if the company
+      achieve success. While working with small companies, I learned to develop the capability to be multifaceted; if
+      the company
       needs me to participate in several aspects of a project, I am always open to the experience.
     </p>
 
     <p>
       Being a team player, I am always looking for alternatives to bring added value to the group, and always
-      willing tohelp other mates when needed. I am also open to suggestions from collaborators and always willing to
+      willing to help other mates when needed. I am also open to suggestions from collaborators and always willing to
       compromise when needed. I retain it is essential to listen to other people's opinions and integrate their
       ideas and recommendations in possible ways.
     </p>
 
   </div>
 
+  <script type="text/javascript">
+    window.onload = buttonToggle();
+  </script>
+
 </body>
-
-<!--  Move to a resubale component: footer.js
-<footer>
-  <p class="reduced-hight-centered">12365 SW 255th Terrace. Homestead FL, 330326</p>
-  <a href="mailto:fredycorea@hotmail.com" class="footer">fredycorea@hotmail.com</a>
-  <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
-
-  <a href="mailto:fredycorea@hotmail.com" class="footer">fredycorea@egstek.com</a>
-  <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
-
-  <a href="tel:3058090938" class="footer">305-809-0938</a>
-  <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
-
-  <a href="tel:7864730207" class="footer">786-473-0207</a>
-</footer> -->
 
 <footer>
   <footer-component></footer-component>
@@ -172,23 +158,11 @@
 
 </html>
 
-<!-- navigation menu control -->
+
+<!-- moved to navButtonTogle.js -->
+<!-- 
 <script>
-
   {
-
-    //add CR to the text
-    // function addCRetun() {
-    //   var ot1 = document.getElementById("sk").textContent;
-    //   document.getElementById("sk").innerHTML = "\r\n" + "###" + document.getElementById("sk").innerHTML;
-
-    //   //var temp = " ";
-    //   // document.body.appendChild(ot);
-    //   var ot2 = document.getElementById("sk").textContent;
-    //   var temp = " ";
-    //   return;
-    // }
-
     $(document).ready(function () {
       /* function called when you click of the button */
       $("button").click(function () {
@@ -203,6 +177,5 @@
         $("li").toggle("slow");
       })
     })
-
   }
-</script>
+</script> -->
