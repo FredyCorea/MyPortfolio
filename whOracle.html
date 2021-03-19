@@ -11,25 +11,31 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
-<header class="header">
 
 
-    <div class="row">
-        <div class="column-header-1">
-            <img src="Images/oracle.png" alt="logo" style="width:100%">
-        </div>
-        <div class="column-header-2">
-            <p class="reduced-hight-right">Oracle America, Inc</p>
-            <p class="reduced-hight-right">6505 Blue Lagoon Dr</p>
-            <p class="reduced-hight-right">Miami, FL 33126</p>
-            <p class="reduced-hight-right">May 2nd, 2016 – February 13th, 2019</p>
-        </div>
+<div class="row">
+    <div class="column-header-1">
+        <img src="Images/oracle.png" alt="logo" style="width:100%">
     </div>
+    <div class="column-header-2">
+        <p class="reduced-hight-right">Oracle America, Inc</p>
+        <p class="reduced-hight-right">6505 Blue Lagoon Dr</p>
+        <p class="reduced-hight-right">Miami, FL 33126</p>
+        <p class="reduced-hight-right">May 2nd, 2016 – February 13th, 2019</p>
+    </div>
+</div>
 
 </header>
 
 <body>
+
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+
     <!-- <article> -->
     <div class="reduced-text">
         <br>
@@ -214,6 +220,9 @@
 
 
     </div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
 </body>
 

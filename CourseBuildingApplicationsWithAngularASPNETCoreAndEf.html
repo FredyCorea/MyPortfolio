@@ -10,8 +10,9 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
-
 
 <header>
     <div class="header">
@@ -23,39 +24,47 @@
     </div>
 </header>
 
+<body>
 
-<div class="reduced-text">
-
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
-
-
-        <h2>Building Applications with Angular, ASP.NET Core, and Entity Framework Core</h2>
-
-        <h3>Learning objectives</h3>
-        • Creating and configuring the Angular project
-        • Creating forms with Angular
-        • Creating get and post routes in an ASP.NET Core controller
-        • Updating Angular service to post to API
-        • Persistence with Entity Framework
-        • Displaying and editing data in Angular with ASP.NET Core
-        • Navigating to different views in Angular
-        • Associations between entities with Angular and Entity Framework
-        • Setting up Identity Framework
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
 
-        <h3>Skills covered</h3>
-        • ASP.NET Core
-        • JavaScript
-        • Back-End Web Development
-        • Entity Framework
+    <div class="reduced-text">
 
         <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
 
+            <h2>Building Applications with Angular, ASP.NET Core, and Entity Framework Core</h2>
+
+            <h3>Learning objectives</h3>
+            • Creating and configuring the Angular project
+            • Creating forms with Angular
+            • Creating get and post routes in an ASP.NET Core controller
+            • Updating Angular service to post to API
+            • Persistence with Entity Framework
+            • Displaying and editing data in Angular with ASP.NET Core
+            • Navigating to different views in Angular
+            • Associations between entities with Angular and Entity Framework
+            • Setting up Identity Framework
+
+
+            <h3>Skills covered</h3>
+            • ASP.NET Core
+            • JavaScript
+            • Back-End Web Development
+            • Entity Framework
         </div>
 
-</html>
-
-<footer>
-    <footer-component></footer-component>
-</footer>
+        <script type="text/javascript">
+            window.onload = buttonToggle();
+        </script>
+    
+    </body>
+    
+    <footer>
+        <footer-component></footer-component>
+    </footer>
+    
+    </html>

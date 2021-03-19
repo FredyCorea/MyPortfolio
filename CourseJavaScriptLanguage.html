@@ -10,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 <header>
@@ -22,35 +24,46 @@
     </div>
 </header>
 
-<div class="reduced-text">
+<body>
 
-   
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
-
-        <h2> JavaScript Language</h2>
-
-        <h3>Learning objectives</h3>
-        • Using a text editor
-        • Declaring and assigning variables
-        • Booleans and the quest for truth
-        • Working with objects and arrays
-        • Using operators and control structures
-        • Iterating with loops
-        • Objects, references, and functions
-        • Promises, async, and await
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+    <div class="reduced-text">
 
 
-        <h3>Skills covered</h3>
-        • Front-end Development
-        • JavaScript
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
+
+            <h2> JavaScript Language</h2>
+
+            <h3>Learning objectives</h3>
+            • Using a text editor
+            • Declaring and assigning variables
+            • Booleans and the quest for truth
+            • Working with objects and arrays
+            • Using operators and control structures
+            • Iterating with loops
+            • Objects, references, and functions
+            • Promises, async, and await
+
+
+            <h3>Skills covered</h3>
+            • Front-end Development
+            • JavaScript
+
+        </div>
 
     </div>
 
-</div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
-</html>
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 
@@ -25,33 +25,44 @@
     </div>
 </header>
 
+<body>
 
-<div class="reduced-text">
-   
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
-        <h2>C# Flow Control, Arrays, and Exception Handling</h2>
+    <div class="reduced-text">
 
-        <h3>Learning objectives</h3>
-        • 	Writing unit tests in C#
-        •	Working with simple and multidimensional arrays
-        •	Managing ordered and unordered data with lists
-        •	Evaluating conditions with if-else statements
-        •	Using OR, AND, and NOT operators
-        •	Building loops
-        •	Debugging and handling exceptions
-        •	Creating the final build of your C# project
-        
-        <h3>Skills covered</h3>
-        •	C#
-        
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
+
+            <h2>C# Flow Control, Arrays, and Exception Handling</h2>
+
+            <h3>Learning objectives</h3>
+            • Writing unit tests in C#
+            • Working with simple and multidimensional arrays
+            • Managing ordered and unordered data with lists
+            • Evaluating conditions with if-else statements
+            • Using OR, AND, and NOT operators
+            • Building loops
+            • Debugging and handling exceptions
+            • Creating the final build of your C# project
+
+            <h3>Skills covered</h3>
+            • C#
+
+        </div>
+
     </div>
 
-</div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
-</html>
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

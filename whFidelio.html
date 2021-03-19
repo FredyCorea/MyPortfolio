@@ -10,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 <header class="header">
@@ -29,6 +31,11 @@
 </header>
 
 <body>
+
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+
     <div class="reduced-text">
         <br>
         <h2 class="reduced-height">Lead of Development and Developer.</h2>
@@ -163,6 +170,9 @@
         <p class="normal-idented"> <img src="Images/bullet_green.png"
                 style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">Design the Data
             Gateway interface: Used to synchronize data between shore and the entire flee and vice-versa.</p>
+        <script type="text/javascript">
+            window.onload = buttonToggle();
+        </script>
 
 </body>
 

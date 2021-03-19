@@ -10,7 +10,10 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
+
 
 
 <header>
@@ -24,32 +27,43 @@
 </header>
 
 
-<div class="reduced-text">
+<body>
 
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+    <div class="reduced-text">
 
-        <h2>Programming Foundations: APIs and Web Services</h2>
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
 
-        <h3>Learning objectives</h3>
-        • What is a web service?
-        • Securing web services
-        • Consuming and creating a RESTful API
-        • Documenting an API
-        • Creating a web service
-        • Consuming a SOAP web service
-        • Developing APIs using GraphQL
+            <h2>Programming Foundations: APIs and Web Services</h2>
 
-        <h3>Skills covered</h3>
-        • Front-end Development
-        • Web Services API
-        • Back-End Web Development
+            <h3>Learning objectives</h3>
+            • What is a web service?
+            • Securing web services
+            • Consuming and creating a RESTful API
+            • Documenting an API
+            • Creating a web service
+            • Consuming a SOAP web service
+            • Developing APIs using GraphQL
 
+            <h3>Skills covered</h3>
+            • Front-end Development
+            • Web Services API
+            • Back-End Web Development
+
+        </div>
     </div>
-</div>
 
-</html>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
+
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

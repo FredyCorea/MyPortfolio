@@ -10,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 <header>
@@ -22,10 +24,16 @@
     </div>
 </header>
 
-<div class="reduced-text">
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
-        <article>
+<body>
+
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+
+    <div class="reduced-text">
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
+
             <h2> ASP.NET Core Test-Driven Development</h2>
 
             <h3>Learning objectives</h3>
@@ -40,12 +48,18 @@
             • ASP.NET
             • Front-end Development
             • Back-End Web Development
-        </article>
-    </div>
-</div>
 
-</html>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
+
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

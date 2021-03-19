@@ -10,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 <header>
@@ -22,42 +24,61 @@
     </div>
 </header>
 
-<div class="reduced-text">
- 
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
+<body>
 
-        <h2>Learning ASP.NET Core MVC</h2>
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
-        <h3>Learning objectives</h3>
-        • Building blocks of ASP.NET Core applications
-        • Creating a new project
-        • Responding to HTTP requests
-        • Serving static files
-        • Understanding the MVC pattern
-        • Handling requests with controllers
-        • Routing
-        • Rendering HTML with Razor
-        • Rendering data, view markup, and view logic
-        • Creating HTML forms
-        • Validating form data
-        • Reading and writing from a database with Entity Framework
-        • Improving the user experience
-        • Exposing data with a web API
-        • Securing your ASP.NET application
 
-        <h3>Skills covered</h3>
-        •	ASP.NET
-        •	Front-end Development
-        •	ASP.NET MVC
-        •	Back-End Web Development
-       
+    <div class="reduced-text">
+
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
+
+            <h2>Learning ASP.NET Core MVC</h2>
+
+            <h3>Learning objectives</h3>
+            • Building blocks of ASP.NET Core applications
+            • Creating a new project
+            • Responding to HTTP requests
+            • Serving static files
+            • Understanding the MVC pattern
+            • Handling requests with controllers
+            • Routing
+            • Rendering HTML with Razor
+            • Rendering data, view markup, and view logic
+            • Creating HTML forms
+            • Validating form data
+            • Reading and writing from a database with Entity Framework
+            • Improving the user experience
+            • Exposing data with a web API
+            • Securing your ASP.NET application
+
+            <h3>Skills covered</h3>
+            • ASP.NET
+            • Front-end Development
+            • ASP.NET MVC
+            • Back-End Web Development
+
+        </div>
+
     </div>
 
-</div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
-</html>
+</body>
+
+<script type="text/javascript">
+    window.onload = buttonToggle();
+</script>
+
+</body>
 
 <footer>
-    <footer-component></footer-component>
+<footer-component></footer-component>
 </footer>
+
+</html>

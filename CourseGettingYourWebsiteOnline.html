@@ -10,7 +10,10 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
+
 
 
 <header>
@@ -23,38 +26,47 @@
     </div>
 </header>
 
+<body>
 
-<div class="reduced-text">
-  
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+    <div class="reduced-text">
 
-        <h2>Getting Your Website Online</h2>
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
 
-        <h3>Learning objectives</h3>
-        • •Domain names and URLs
-        • Different types of web hosting
-        • Purchasing domains
-        • Website builders
-        • Squarespace
-        • WordPress.com vs. WordPress.org
-        • Options for setting up an online store
-        • Hosted and self-hosted websites
-        • Setting up a domain separate from hosting
-        • Self-hosting with WordPress
+            <h2>Getting Your Website Online</h2>
+
+            <h3>Learning objectives</h3>
+            • •Domain names and URLs
+            • Different types of web hosting
+            • Purchasing domains
+            • Website builders
+            • Squarespace
+            • WordPress.com vs. WordPress.org
+            • Options for setting up an online store
+            • Hosted and self-hosted websites
+            • Setting up a domain separate from hosting
+            • Self-hosting with WordPress
 
 
-        <h3>Skills covered</h3>
-        • Front-end Development
-        • WordPress
-        • Web Design
+            <h3>Skills covered</h3>
+            • Front-end Development
+            • WordPress
+            • Web Design
+
+        </div>
 
     </div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
-</div>
-
-</html>
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

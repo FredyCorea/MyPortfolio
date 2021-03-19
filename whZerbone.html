@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Web Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="Code/stylesheet.css" media="screen" rel="styleSheet" />
-    <link type="text/css" href="Code/header.css" rel="styleSheet" media="screen" />
-    <script src="Code/jquery-3.4.1.min.js"></script>
-    <script src="Data/Data.js"></script>
-    <script src="Code/footer.js" type="text/javascript" defer></script>
+<title>Web Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" href="Code/stylesheet.css" media="screen" rel="styleSheet" />
+<link type="text/css" href="Code/header.css" rel="styleSheet" media="screen" />
+<script src="Code/jquery-3.4.1.min.js"></script>
+<script src="Data/Data.js"></script>
+<script src="Code/footer.js" type="text/javascript" defer></script>
+<script src="Code/nav.js" type="text/javascript" defer></script>
+<script src="Code/navButtonToggle.js"></script>
 </head>
 
 <header class="header">
@@ -24,68 +25,78 @@
         </div>
     </div>
 
-    <body>
-        <!-- <article> -->
-        <div class="reduced-text">
-            <br>
-            <h2 class="reduced-height">Programmer Analyst</h2>
-
-            <p class="normal"><b>Technology used</b></p>
-            <p class="normal-idented"> <img src="Images/bullet_green.png"
-                    style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">MS Visual Fox
-                Pro</p>
-            <p class="normal-idented"> <img src="Images/bullet_green.png"
-                    style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">MS SQL
-                database server</p>
-
-            <p class="normal-idented"> <img src="Images/bullet_green.png"
-                    style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">T - SQL</p>
-
-
-            <p class="normal"><b>Tasks</b></p>
-            <p class="normal-idented"> <img src="Images/bullet_green.png"
-                    style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">
-                Analysis and project leading of the Multiple Bids Purchasing System
-                <br>
-                An advanced application was created to expedite the process of buying goods at the lowest bid, saving
-                millions of
-                dollars yearly.
-            </p>
-
-            <p class="normal-idented"> <img src="Images/bullet_green.png"
-                    style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">
-                Analysis and project leading of the Multiple Bids Purchasing System
-                <br>
-                Analysis, design, and implementation of the MD Master.
-                <br>
-                An advance Risk Management application created to keep
-                track of incidents and medical treatment for crewmembers and passengers.
-            </p>
-
-            <p class="normal-idented"> <img src="Images/bullet_green.png"
-                    style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">
-                SBT Accounting Maintenance and customization: interfaces with the crewmember’s payroll system
-            </p>
-
-            <p class="normal-idented"> <img src="Images/bullet_green.png"
-                    style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">
-                SBT Accounting Maintenance and customization: interfaces with the crewmember’s payroll system
-            </p>
-
-            <p class="normal-idented"> <img src="Images/bullet_green.png"
-                    style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">
-                Food and Beverage Cost Control System <br>
-                This application enhanced the process to calculate the cost of goods and improved the process of
-                materials order from ships. Calculates and delivered the per-diem pro-capita food and beverages
-                consumption cost weekly
-                in an effortless fashion. Used to maintain the operations costs within the profitable ranges.
-            </p>
-
-
-        </div>
-    </body>
-
 </header>
+
+
+<body>
+
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+
+    <!-- <article> -->
+    <div class="reduced-text">
+        <br>
+        <h2 class="reduced-height">Programmer Analyst</h2>
+
+        <p class="normal"><b>Technology used</b></p>
+        <p class="normal-idented"> <img src="Images/bullet_green.png"
+                style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">MS Visual Fox
+            Pro</p>
+        <p class="normal-idented"> <img src="Images/bullet_green.png"
+                style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">MS SQL
+            database server</p>
+
+        <p class="normal-idented"> <img src="Images/bullet_green.png"
+                style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">T - SQL</p>
+
+
+        <p class="normal"><b>Tasks</b></p>
+        <p class="normal-idented"> <img src="Images/bullet_green.png"
+                style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">
+            Analysis and project leading of the Multiple Bids Purchasing System
+            <br>
+            An advanced application was created to expedite the process of buying goods at the lowest bid, saving
+            millions of
+            dollars yearly.
+        </p>
+
+        <p class="normal-idented"> <img src="Images/bullet_green.png"
+                style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">
+            Analysis and project leading of the Multiple Bids Purchasing System
+            <br>
+            Analysis, design, and implementation of the MD Master.
+            <br>
+            An advance Risk Management application created to keep
+            track of incidents and medical treatment for crewmembers and passengers.
+        </p>
+
+        <p class="normal-idented"> <img src="Images/bullet_green.png"
+                style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">
+            SBT Accounting Maintenance and customization: interfaces with the crewmember’s payroll system
+        </p>
+
+        <p class="normal-idented"> <img src="Images/bullet_green.png"
+                style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">
+            SBT Accounting Maintenance and customization: interfaces with the crewmember’s payroll system
+        </p>
+
+        <p class="normal-idented"> <img src="Images/bullet_green.png"
+                style="border: 0; display:inline; margin: 0 2px; box-shadow: none" alt="start up icon">
+            Food and Beverage Cost Control System <br>
+            This application enhanced the process to calculate the cost of goods and improved the process of
+            materials order from ships. Calculates and delivered the per-diem pro-capita food and beverages
+            consumption cost weekly
+            in an effortless fashion. Used to maintain the operations costs within the profitable ranges.
+        </p>
+
+    </div>
+
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
+
+</body>
 
 <footer>
     <footer-component></footer-component>

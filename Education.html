@@ -10,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 <header>
@@ -22,10 +24,13 @@
     </div>
 </header>
 
-
 <!-- <body style="text-align:center"> -->
 
 <body>
+
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
     <h1 class="reduced-height">Education</h1>
 
@@ -43,7 +48,7 @@
             </td>
         </tr>
 
-        
+
         <tr>
             <td>Bachelor of Science Information Technology</td>
             <td>Graduation: June 2020</td>
@@ -176,15 +181,16 @@
             <td></td>
         </tr>
 
-
     </table>
 
-    </div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
+
+    <footer>
+        <footer-component></footer-component>
+    </footer>
+
 </body>
 
 </html>
-
-
-<footer>
-    <footer-component></footer-component>
-</footer>

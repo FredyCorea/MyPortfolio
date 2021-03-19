@@ -10,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 
@@ -23,30 +25,41 @@
     </div>
 </header>
 
+<body>
 
-<div class="reduced-text">
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
+    <div class="reduced-text">
 
-        <h2>Learning C# Algorithms</h2>
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
 
-        <h3>Learning objectives</h3>
-        • Working with linked lists
-        • Creating a stack
-        • Defining a queue
-        • Performing a binary search
-        • Finding target values with a linear search
+            <h2>Learning C# Algorithms</h2>
 
-        <h3>Skills covered</h3>
-        • Algorithms
-        • C#
+            <h3>Learning objectives</h3>
+            • Working with linked lists
+            • Creating a stack
+            • Defining a queue
+            • Performing a binary search
+            • Finding target values with a linear search
+
+            <h3>Skills covered</h3>
+            • Algorithms
+            • C#
+        </div>
+
     </div>
 
-</div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
-</html>
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

@@ -10,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 
@@ -23,36 +25,48 @@
     </div>
 </header>
 
+<body>
 
-<div class="reduced-text">
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
-    <div class="newspaper">
 
-        <h1 class="reduced-height">Education - Self Training</h1>
+    <div class="reduced-text">
 
-        <h2>HTML & CSS: Creating Forms</h2>
+        <div class="newspaper">
 
-        <h3>Learning objectives</h3>
-        • How users interact with forms
-        • Designing forms that are easy to use
-        • Following data privacy laws when collecting information
-        • Choosing which HTML input types to use
-        • Adding buttons
-        • Adding interactive validation
-        • Styling form fields with CSS
-        • Using positioning and flexbox to create responsive form layouts
+            <h1 class="reduced-height">Education - Self Training</h1>
 
-        <h3>Skills covered</h3>
-        • Front-end Development
-        • HTML
-        • Cascading Style Sheets (CSS)
+            <h2>HTML & CSS: Creating Forms</h2>
+
+            <h3>Learning objectives</h3>
+            • How users interact with forms
+            • Designing forms that are easy to use
+            • Following data privacy laws when collecting information
+            • Choosing which HTML input types to use
+            • Adding buttons
+            • Adding interactive validation
+            • Styling form fields with CSS
+            • Using positioning and flexbox to create responsive form layouts
+
+            <h3>Skills covered</h3>
+            • Front-end Development
+            • HTML
+            • Cascading Style Sheets (CSS)
+
+        </div>
 
     </div>
 
-</div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
-</html>
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

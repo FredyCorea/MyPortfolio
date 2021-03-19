@@ -10,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 
@@ -23,38 +25,48 @@
     </div>
 </header>
 
+<body>
 
-<div class="reduced-text">
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+    <div class="reduced-text">
 
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
 
-        <h2>C# Syntax and Object-Oriented Programming</h2>
-        
-        <h3>Learning objectives</h3>
-        • The history of C#
-        • Setting up your development environment in Visual Studio
-        • Declaring variables
-        • Working with strings
-        • Using mathematical operations
-        • Creating classes and properties
-        • Using expressions
-        • Using static, abstract, and virtual methods
-        • Building a user interface
-        • Extending classes
-        • Working with subclassed objects
-        • Using the object-oriented features of C#
+            <h2>C# Syntax and Object-Oriented Programming</h2>
+
+            <h3>Learning objectives</h3>
+            • The history of C#
+            • Setting up your development environment in Visual Studio
+            • Declaring variables
+            • Working with strings
+            • Using mathematical operations
+            • Creating classes and properties
+            • Using expressions
+            • Using static, abstract, and virtual methods
+            • Building a user interface
+            • Extending classes
+            • Working with subclassed objects
+            • Using the object-oriented features of C#
 
 
-        <h3> Skills covered</h3>
-        • Object-Oriented Programming (OOP)
-        • C#
+            <h3> Skills covered</h3>
+            • Object-Oriented Programming (OOP)
+            • C#
+
+        </div>
 
     </div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
-</div>
+</body>
 
-</html>
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

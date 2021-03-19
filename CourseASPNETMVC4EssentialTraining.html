@@ -10,7 +10,10 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
+
 
 
 <header>
@@ -23,41 +26,49 @@
     </div>
 </header>
 
+<body>
 
-<div class="reduced-text">
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
-
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
-
-        <h2>ASP.NET MVC 4 Essential Training</h2>
-        <h3>Learning objectives</h3>
-        • What is Microsoft ASP.NET MVC?
-        • Creating your first ASP.NET MVC project
-        • Understanding the MVC architecture
-        • Interacting with models and ViewData
-        • Applying advanced layout techniques
-        • Routing requests to controller actions
-        • Validating user input
-        • Authenticating registered users
-        • Caching pages
-        • Reducing bandwidth usage with bundling and minification
-        • Displaying mobile-optimized content
-        • Simplifying a complex application with areas
-        • Configuring and deploying to IIS or Windows Azure
-
-
-        <h3> Skills covered</h3>
-        • ASP.NET
-        • ASP.NET MVC
-        • Servers
-        • Back-End Web Development
+    <div class="reduced-text">
 
         <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
+
+            <h2>ASP.NET MVC 4 Essential Training</h2>
+            <h3>Learning objectives</h3>
+            • What is Microsoft ASP.NET MVC?
+            • Creating your first ASP.NET MVC project
+            • Understanding the MVC architecture
+            • Interacting with models and ViewData
+            • Applying advanced layout techniques
+            • Routing requests to controller actions
+            • Validating user input
+            • Authenticating registered users
+            • Caching pages
+            • Reducing bandwidth usage with bundling and minification
+            • Displaying mobile-optimized content
+            • Simplifying a complex application with areas
+            • Configuring and deploying to IIS or Windows Azure
+
+
+            <h3> Skills covered</h3>
+            • ASP.NET
+            • ASP.NET MVC
+            • Servers
+            • Back-End Web Development
 
         </div>
-
-</html>
-<footer>
-    <footer-component></footer-component>
-</footer>
+        <script type="text/javascript">
+            window.onload = buttonToggle();
+        </script>
+    
+    </body>
+    
+    <footer>
+        <footer-component></footer-component>
+    </footer>
+    
+    </html>

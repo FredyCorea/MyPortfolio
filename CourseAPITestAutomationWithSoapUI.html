@@ -10,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 <header>
@@ -22,31 +24,44 @@
     </div>
 </header>
 
-<div class="reduced-text">
+<body>
 
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
-        <h2>API Test Automation with SoapUI</h2>
 
-        <h3>Learning objectives</h3>
-        • Creating your first project in SoapUI
-        • Adding request and query parameters
-        • Creating test suites
-        • Scripting with dynamic properties
-        • Running SoapUI from the command line or Docker
+    <div class="reduced-text">
 
-        <h3>Skills covered</h3>
-        • API Testing
-        • SoapUI
-        • Test Automation
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
+
+            <h2>API Test Automation with SoapUI</h2>
+
+            <h3>Learning objectives</h3>
+            • Creating your first project in SoapUI
+            • Adding request and query parameters
+            • Creating test suites
+            • Scripting with dynamic properties
+            • Running SoapUI from the command line or Docker
+
+            <h3>Skills covered</h3>
+            • API Testing
+            • SoapUI
+            • Test Automation
+
+        </div>
 
     </div>
 
-</div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
-</html>
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

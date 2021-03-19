@@ -10,7 +10,10 @@
   <script src="Code/jquery-3.4.1.min.js"></script>
   <script src="Data/Data.js"></script>
   <script src="Code/footer.js" type="text/javascript" defer></script>
+  <script src="Code/nav.js" type="text/javascript" defer></script>
+  <script src="Code/navButtonToggle.js"></script>
 </head>
+
 
 <header class="header">
 
@@ -38,6 +41,10 @@
 </header>
 
 <body>
+
+  <Nav>
+    <nav-component></nav-component>
+  </nav>
   <!-- <article> -->
   <div class="reduced-text">
 
@@ -140,6 +147,11 @@
   <!-- </article> -->
 </body>
 
+<script type="text/javascript">
+  window.onload = buttonToggle();
+</script>
+
+</body>
 
 <footer>
   <footer-component></footer-component>

@@ -11,6 +11,8 @@
     <script src="Code/footer.js" type="text/javascript" defer></script>
     <script src="Data/Data.js"></script>
     <script src="Code/jquery-3.4.1.min.js"></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 <header>
@@ -24,7 +26,11 @@
 </header>
 
 <!-- <body style="text-align:center"> -->
+
 <body>
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
     <h1 style="color:navy;">
         Work History
@@ -39,6 +45,7 @@
     <script type="text/javascript">
         var whList = GetWorkHistoryData();
         window.onload = populateWHTable(whList);
+        window.onload = buttonToggle();
     </script>
 
 </body>

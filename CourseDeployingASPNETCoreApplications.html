@@ -10,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 
@@ -23,38 +25,49 @@
     </div>
 </header>
 
+<body>
 
-<div class="reduced-text">
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
-  
-    <div class="newspaper">
-
-        <h1 class="reduced-height">Education - Self Training</h1>
-
-        <h2>Deploying ASP.NET Core Applications</h2>
-
-        <h3>Learning objectives</h3>
-        • Setting up your ASP.NET project
-        • Choosing a deployment strategy
-        • Configuring HTTPS and forwarding
-        • Deploying to IIS
-        • Deploying to Azure
-        • Deploying to Linux
-        • Deploying with Docker
+    <div class="reduced-text">
 
 
+        <div class="newspaper">
 
-        <h3>Skills covered</h3>
-        • ASP.NET Core
-        • Cross-platform Development
-        • Back-End Web Development
-        • Docker Products
+            <h1 class="reduced-height">Education - Self Training</h1>
+
+            <h2>Deploying ASP.NET Core Applications</h2>
+
+            <h3>Learning objectives</h3>
+            • Setting up your ASP.NET project
+            • Choosing a deployment strategy
+            • Configuring HTTPS and forwarding
+            • Deploying to IIS
+            • Deploying to Azure
+            • Deploying to Linux
+            • Deploying with Docker
+
+
+
+            <h3>Skills covered</h3>
+            • ASP.NET Core
+            • Cross-platform Development
+            • Back-End Web Development
+            • Docker Products
+        </div>
+
     </div>
 
-</div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
-</html>
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

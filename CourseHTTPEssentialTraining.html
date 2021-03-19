@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Web Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="Code/stylesheet.css" media="screen" rel="styleSheet" />
-    <link type="text/css" href="Code/header.css" rel="styleSheet" media="screen" />
-    <script src="Code/jquery-3.4.1.min.js"></script>
-    <script src="Data/Data.js"></script>
-    <script src="Code/footer.js" type="text/javascript" defer></script>
-</head>
-
+    <head>
+        <title>Web Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" href="Code/stylesheet.css" media="screen" rel="styleSheet" />
+        <link type="text/css" href="Code/header.css" rel="styleSheet" media="screen" />
+        <script src="Code/jquery-3.4.1.min.js"></script>
+        <script src="Data/Data.js"></script>
+        <script src="Code/footer.js" type="text/javascript" defer></script>
+        <script src="Code/nav.js" type="text/javascript" defer></script>
+        <script src="Code/navButtonToggle.js"></script>
+    </head>
 
 <header>
     <div class="header">
@@ -23,6 +24,11 @@
     </div>
 </header>
 
+<body>
+
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
 <div class="reduced-text">
 
@@ -50,8 +56,14 @@
 
 </div>
 
-</html>
+<script type="text/javascript">
+    window.onload = buttonToggle();
+</script>
+
+</body>
 
 <footer>
-    <footer-component></footer-component>
+<footer-component></footer-component>
 </footer>
+
+</html>

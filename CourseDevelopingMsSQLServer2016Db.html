@@ -10,7 +10,10 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
+
 
 
 <header>
@@ -23,43 +26,55 @@
     </div>
 </header>
 
+<body>
 
-<div class="reduced-text">
-    <div class="newspaper">
-
-        <h1 class="reduced-height">Education - Self Training</h1>
-
-        <h2>Developing Microsoft SQL Server 2016 Databases</h2>
-
-        <h3>Learning objectives</h3>
-        • Creating and altering tables
-        • Creating calculated columns
-        • Implementing advanced features like temporary tables, table variables, and compression
-        • Working with database views
-        • Ensuring data integrity through constraints
-        • Creating secure user accounts
-        • Implementing data types
-        • Writing stored procedures
-        • Creating in-memory tables
-        • Indexing and index optimization
-        • Optimizing query performance
-        • Designing and implementing user-defined functions (UDFs)
-        • Monitoring database performance
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
 
-        <h3>Skills covered</h3>
-        • Database Development
-        • Data Management
-        • Database Administration
-        • Microsoft SQL Server
+    <div class="reduced-text">
+        <div class="newspaper">
+
+            <h1 class="reduced-height">Education - Self Training</h1>
+
+            <h2>Developing Microsoft SQL Server 2016 Databases</h2>
+
+            <h3>Learning objectives</h3>
+            • Creating and altering tables
+            • Creating calculated columns
+            • Implementing advanced features like temporary tables, table variables, and compression
+            • Working with database views
+            • Ensuring data integrity through constraints
+            • Creating secure user accounts
+            • Implementing data types
+            • Writing stored procedures
+            • Creating in-memory tables
+            • Indexing and index optimization
+            • Optimizing query performance
+            • Designing and implementing user-defined functions (UDFs)
+            • Monitoring database performance
+
+
+            <h3>Skills covered</h3>
+            • Database Development
+            • Data Management
+            • Database Administration
+            • Microsoft SQL Server
+
+        </div>
+    </div>
 
     </div>
-</div>
 
-</div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
-</html>
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

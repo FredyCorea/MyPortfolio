@@ -5,6 +5,9 @@
     padding:  10px 10px 5px 10px;
     margin-bottom: 0;
     margin-top: 0;
+    /* background-image: url("../Images/SplashScreenBlue.png");
+    background-repeat: no-repeat;
+    background-position: right, left;  */
     /* width: 100%;   this creates overflow and a horizontal scroll bar*/
   }
   
