@@ -10,48 +10,60 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
+<body>
 
-<header>
-    <div class="header">
-        <div class="column-header-1">
-            <p class="logo1">Fredy R. Corea</p>
-            <p class="logo2">Software Designer and Developer</p>
-            <p class="logo3">Professional Porfolio</p>
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+    <header>
+        <div class="header">
+            <div class="column-header-1">
+                <p class="logo1">Fredy R. Corea</p>
+                <p class="logo2">Software Designer and Developer</p>
+                <p class="logo3">Professional Porfolio</p>
+            </div>
         </div>
+    </header>
+
+
+    <div class="reduced-text">
+
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
+
+            <h2>Programming Foundations: Databases</h2>
+
+            <h3>Learning objectives</h3>
+            • What is a database?
+            • Why do you need a database?
+            • Choosing primary keys
+            • Identifying columns and selecting data types
+            • Defining relationships: one-to-one, one-to-many, and many-to-many
+            • Understanding normalization
+            • Creating queries to create, insert, update, and delete data
+            • Understanding indexing and stored procedures
+            • Exploring your database options
+
+            <h3>Skills covered</h3>
+            • Databases
+            • Database Development
+            • Software Design
+        </div>
+
     </div>
-</header>
 
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
-<div class="reduced-text">
-
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
-
-        <h2>Programming Foundations: Databases</h2>
-
-        <h3>Learning objectives</h3>
-        • What is a database?
-        • Why do you need a database?
-        • Choosing primary keys
-        • Identifying columns and selecting data types
-        • Defining relationships: one-to-one, one-to-many, and many-to-many
-        • Understanding normalization
-        • Creating queries to create, insert, update, and delete data
-        • Understanding indexing and stored procedures
-        • Exploring your database options
-        
-        <h3>Skills covered</h3>
-        •	Databases
-        •	Database Development
-        •	Software Design
-    </div>
-
-</div>
-
-</html>
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

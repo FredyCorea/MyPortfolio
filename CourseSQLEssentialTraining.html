@@ -10,8 +10,9 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
-
 
 <header>
     <div class="header">
@@ -23,39 +24,49 @@
     </div>
 </header>
 
+<body>
 
-<div class="reduced-text">
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+    <div class="reduced-text">
 
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
 
-        <h2>Programming Foundations: Databases</h2>
+            <h2>Programming Foundations: Databases</h2>
 
-        <h3>Learning objectives</h3>
-        • How databases are organized
-        • Selecting rows and columns
-        • Creating new tables
-        • Inserting and updating data
-        • Sorting and filtering
-        • Accessing related tables with JOIN
-        • Working with strings
-        • Understanding numeric types
-        • Using aggregate functions and transactions
-        • Automating data with triggers
-        • Creating views
-        • Using CRUD functions
+            <h3>Learning objectives</h3>
+            • How databases are organized
+            • Selecting rows and columns
+            • Creating new tables
+            • Inserting and updating data
+            • Sorting and filtering
+            • Accessing related tables with JOIN
+            • Working with strings
+            • Understanding numeric types
+            • Using aggregate functions and transactions
+            • Automating data with triggers
+            • Creating views
+            • Using CRUD functions
 
-        <h3>Skills covered</h3>
-        • SQLite
-        • Relational Databases
-        • SQL
+            <h3>Skills covered</h3>
+            • SQLite
+            • Relational Databases
+            • SQL
+
+        </div>
 
     </div>
 
-</div>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
-</html>
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

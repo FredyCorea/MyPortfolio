@@ -10,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 
@@ -23,8 +25,12 @@
     </div>
 </header>
 
+<body>
 
-<div class="reduced-text">
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+    <div class="reduced-text">
 
         <h1 class="reduced-height">Education - Self Training</h1>
 
@@ -45,10 +51,16 @@
 
     </div>
 
-</div>
+    </div>
 
-</html>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
+
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>

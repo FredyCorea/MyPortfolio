@@ -10,6 +10,8 @@
     <script src="Code/jquery-3.4.1.min.js"></script>
     <script src="Data/Data.js"></script>
     <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
 </head>
 
 
@@ -23,35 +25,48 @@
     </div>
 </header>
 
+<body>
 
-<div class="reduced-text">
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
 
-    
+    <div class="reduced-text">
 
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
-        <h2>Programming Foundations: Beyond the Fundamentals</h2>
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
+            <h2>Programming Foundations: Beyond the Fundamentals</h2>
 
-        <h3>Course details</h3>
-        Continue your coding journey as you dive deeper into the foundational concepts, practices, and terminology of
-        programming. In this installment of the Programming Foundations series, instructor Sasha Vodnik goes beyond the
-        basics, using Python to tackle a variety of intermediate and advanced concepts and skills you can add to your
-        programming repertoire. Sasha covers creating and working with collections and loops, combining, and
-        manipulating strings, and using external code—all of which are critical concepts, regardless of which
-        programming language you end up working with. He goes over several essential processes, such as choosing a code
-        style and debugging. Plus, he digs into a few more advanced concepts, including memory management and
-        multithreading.
+            <h3>Course details</h3>
+            Continue your coding journey as you dive deeper into the foundational concepts, practices, and terminology
+            of
+            programming. In this installment of the Programming Foundations series, instructor Sasha Vodnik goes beyond
+            the
+            basics, using Python to tackle a variety of intermediate and advanced concepts and skills you can add to
+            your
+            programming repertoire. Sasha covers creating and working with collections and loops, combining, and
+            manipulating strings, and using external code—all of which are critical concepts, regardless of which
+            programming language you end up working with. He goes over several essential processes, such as choosing a
+            code
+            style and debugging. Plus, he digs into a few more advanced concepts, including memory management and
+            multithreading.
 
-        <h3>Skills covered</h3>
-        • Programming
-        • Python
+            <h3>Skills covered</h3>
+            • Programming
+            • Python
 
-    </DIV>
+        </div>
 
-</div>
+    </div>
 
-</html>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
+
+</body>
 
 <footer>
     <footer-component></footer-component>
 </footer>
+
+</html>
