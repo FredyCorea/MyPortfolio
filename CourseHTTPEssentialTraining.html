@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Web Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="text/css" href="Code/stylesheet.css" media="screen" rel="styleSheet" />
-        <link type="text/css" href="Code/header.css" rel="styleSheet" media="screen" />
-        <script src="Code/jquery-3.4.1.min.js"></script>
-        <script src="Data/Data.js"></script>
-        <script src="Code/footer.js" type="text/javascript" defer></script>
-        <script src="Code/nav.js" type="text/javascript" defer></script>
-        <script src="Code/navButtonToggle.js"></script>
-    </head>
+<head>
+    <title>Web Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="Code/stylesheet.css" media="screen" rel="styleSheet" />
+    <link type="text/css" href="Code/header.css" rel="styleSheet" media="screen" />
+    <script src="Code/jquery-3.4.1.min.js"></script>
+    <script src="Data/Data.js"></script>
+    <script src="Code/header.js"></script>
+    <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
+</head>
 
 <header>
-    <div class="header">
-        <div class="column-header-1">
-            <p class="logo1">Fredy R. Corea</p>
-            <p class="logo2">Software Designer and Developer</p>
-            <p class="logo3">Professional Porfolio</p>
-        </div>
-    </div>
+    <header-component></header-component>
 </header>
 
 <body>
@@ -30,40 +25,40 @@
         <nav-component></nav-component>
     </nav>
 
-<div class="reduced-text">
+    <div class="reduced-text">
 
- 
-    <div class="newspaper">
-        <h1 class="reduced-height">Education - Self Training</h1>
 
-        <h2>HTTP Essential Training</h2>
+        <div class="newspaper">
+            <h1 class="reduced-height">Education - Self Training</h1>
 
-        <h3>Learning objectives</h3>
-        • What is HTTP?
-        • Tools to see HTTP in action
-        • Anatomy of a URL
-        • How to see HTTP headers
-        • Anatomy of a request header and a response header
-        • Cookies and caching
+            <h2>HTTP Essential Training</h2>
 
-        <h3>Skills covered</h3>
-        • Front-end Development
-        • Hypertext Transfer Protocol (HTTP)
-        • Application Programming Interfaces
-        • Back-End Web Development
+            <h3>Learning objectives</h3>
+            • What is HTTP?
+            • Tools to see HTTP in action
+            • Anatomy of a URL
+            • How to see HTTP headers
+            • Anatomy of a request header and a response header
+            • Cookies and caching
+
+            <h3>Skills covered</h3>
+            • Front-end Development
+            • Hypertext Transfer Protocol (HTTP)
+            • Application Programming Interfaces
+            • Back-End Web Development
+
+        </div>
 
     </div>
 
-</div>
-
-<script type="text/javascript">
-    window.onload = buttonToggle();
-</script>
+    <script type="text/javascript">
+        window.onload = buttonToggle();
+    </script>
 
 </body>
 
 <footer>
-<footer-component></footer-component>
+    <footer-component></footer-component>
 </footer>
 
 </html>

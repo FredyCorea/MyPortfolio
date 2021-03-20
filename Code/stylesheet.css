@@ -196,7 +196,13 @@ a.footer:link{
 a:link{
     /* color:red; */
     text-decoration: none;
+    
 }
+
+a:visited { 
+    color:#ff4000; 
+     }
+
 
 a:hover {
     background-color: #001a4d;
@@ -215,10 +221,11 @@ a.header:link{
     padding: 0 0 0 0;
 }
 
-a.main-menu:link{
-    margin: 0 0 0 0;
-    padding: 10 10 10 10;
-}
+/* defatul visited color */
+a:visited { 
+    color:#ff4000; 
+     }
+
 
 /* ul for main menu formatting */
 .navMenu {
@@ -227,17 +234,22 @@ a.main-menu:link{
     padding: 0;
     overflow: hidden;
     background-color: #001a4d;
-    /*this option by default dispose the elements in a row (flex-direction: row)*/
     display: flex;
+    color: white;
+    /*this option by default dispose the elements in a row (flex-direction: row)*/
     /* width: 100%; */
 }
 
+a.main-menu:link{
+    margin: 0 0 0 0;
+    padding: 10 10 10 10;
+}
+
+/* link visited color for the main menu, red over dark blue does not look nice */
+.navMenu a:visited{color:aqua}
 
 /*list elements inside an OL or UL */
-
-
 /*also impacts the main menu */
-
 li {
     float: left;
     /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
@@ -246,9 +258,7 @@ li {
     font-size: 3vh;
 }
 
-
 /*list with normal text */
-
 li.normal {
     /* list-style-type: none; */
     /* margin: 0;
@@ -257,9 +267,7 @@ li.normal {
     float: left;
 }
 
-
 /* list element combined with a */
-
 li a {
     display: block;
     color: white;
@@ -268,10 +276,9 @@ li a {
     text-decoration: none;
 }
 
+/*this control the links in the main menu  */
 li a:hover {
-    /* background-color: #111111; */
-    /* background-color: red; */
-    background-color: #C6E9FF;
+    background-color: #0040ff;
     color: black;
 }
 
