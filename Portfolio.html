@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="Code/stylesheet.css" media="screen" rel="styleSheet" />
+    <link type="text/css" href="Code/header.css" rel="styleSheet" media="screen" />
+    <script src="Code/jquery-3.4.1.min.js"></script>
+    <script src="Data/Data.js"></script>
+    <script src="Code/header.js"></script>
+    <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
+</head>
+
+<header>
+    <header-component></header-component>
+</header>
+
+<body>
+
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+
+    <h1 class="reduced-height">Portfolio</h1>
+
+    <div class="row">
+        <div class="column-body">
+            <div>
+                <h2>Projects Source Code</h2>
+                <p class="p.normal-idented"><a href="./Documents/DemoDBExcursionOnlineSales.pdf">Demo - Services Online DB Documentation</a></p>
+                <p class="p.normal-idented"><a href="./Documents/ServicesOnLine.bak">Demo - Services Online DB Backup</a></p>
+            </div>
+
+            <div>
+                <h2>Academic Projects Sample</h2>
+                <p class="p.normal-idented"><a href="./Documents/ProjectPlan.pdf">Acadmics - Project Plan</a></p>
+            </div>
+
+            <p class="p.normal-idented"><a href="./Documents/Resume.pdf">Resume</a></p>
+        </div>
+
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    window.onload = buttonToggle();
+</script>
+
+<footer>
+    <footer-component></footer-component>
+</footer>
+
+</html>
