@@ -1,8 +1,14 @@
-
-
   main {
     flex: 1 0 auto;
   }
+
+  body {
+    /* background-color:#FFFFFF; */
+    background-color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
 
 .logo1 {
     color: #003366;
@@ -51,7 +57,6 @@
     margin-right: 5px;
 }
 
-
 .newspaper {
     column-count: 3;
     column-gap: 40px;
@@ -89,12 +94,6 @@ nav {
 .picture-container{
     margin-bottom: 0;
     padding-bottom: 0;
-}
-
-body {
-    background-color:#FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
 }
 
 h1 {
@@ -293,7 +292,7 @@ button {
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 95%;
+    width: 100%;
     border: 1px solid #dddddd;
 }
 
