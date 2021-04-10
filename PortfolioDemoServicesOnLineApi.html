@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="Code/stylesheet.css" media="screen" rel="styleSheet" />
+    <link type="text/css" href="Code/header.css" rel="styleSheet" media="screen" />
+    <script src="Code/jquery-3.4.1.min.js"></script>
+    <script src="Data/Data.js"></script>
+    <script src="Code/header.js"></script>
+    <script src="Code/footer.js" type="text/javascript" defer></script>
+    <script src="Code/nav.js" type="text/javascript" defer></script>
+    <script src="Code/navButtonToggle.js"></script>
+</head>
+
+<header>
+    <header-component></header-component>
+</header>
+
+<body>
+
+    <Nav>
+        <nav-component></nav-component>
+    </nav>
+
+    <h1 class="reduced-height">Portfolio - Services Online API</h1>
+
+    <div class="reduced-text">
+        <table>
+
+            <tr>
+                <th id="colspan-back-color">
+                    <p class="normal-centered">
+                        -
+                    </p>
+                </th>
+
+                <th id="colspan-back-color">
+                    <p class="normal-centered">
+                      -
+                    </p>
+                </th>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="./Documents/DemoDBExcursionOnlineSales.pdf">Demo - Services
+                        Online DB Documentation</a>
+                </td>
+                <td>
+                    <a href="https://github.com/FredyCorea/ServicesOnlineASPNETCoreAPI">Services-Online ASP.NET
+                        Core API with Entity Framework – Database First Approach.</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="./Documents/ServicesOnLine.bak">Demo - Services Online DB Backup</a>
+                </td>
+                <td>Razor Pages ASP.NET Front End application.</td>
+            </tr>
+
+            <tr>
+                <td><a href="./Documents/ServicesOnLineDbAndTablesCreationScript.txt">Demo -
+                        Services Online DB Creation Script</a></td>
+                <td>Blazor Wasm Front End application.</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Angular base Front End application.</td>
+            </tr>
+
+            <tr>
+                <th colspan="2" id="colspan-back-color">
+                    <p class="normal-centered"> Academic Projects Sample</p>
+                </th>
+
+
+            </tr>
+            <tr>
+                <td>
+                    <a href="./Documents/ProjectPlan.pdf">Acadmics - Project Plan</a>
+                </td>
+                <td>
+                    <a href="./Documents/Resume.pdf">Resume</a>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    window.onload = buttonToggle();
+</script>
+
+<footer>
+    <footer-component></footer-component>
+</footer>
+
+</html>
