@@ -1,0 +1,60 @@
+<div class="main-content">
+
+    <h3 class="section">URL</h3>
+
+    <code>https://servicesonlineapi20210403012343.azurewebsites.net/api/person</code>
+    <br>
+    <code>curl -X POST "https://servicesonlineapi20210403012343.azurewebsites.net/api/person" -H  "accept: */*" -H  "Content-Type: application/json-patch+json" -d "{\"personName\":\"New\",\"lastName\":\"Person\",\"roomId\":0}" </code>
+
+    <h3 class="section">HTTP Method</h3>
+    <code>POST</code>
+
+    <h3 class="section">Response Type</h3>
+
+    <div class="model" data-model=""><a href=""></a></div>
+
+    <code>
+        {
+        "personId": 18,
+        "personName": "Test",
+        "lastName": "test",
+        "roomId": 1,
+        "personsRoles": [
+        {
+            "personRolesId": 17,
+            "personId": 18,
+            "roleId": 1,
+            "role": null
+        }
+        ],
+        "entity": [
+        {
+            "entityId": 22,
+            "personId": 18,
+            "propertyId": null,
+            "locationId": null
+        }
+        ]
+        }
+    </code>
+
+    <h3 class="section">Parameters</h3>
+    <ul>
+        <li class="parameter">
+            <span class="param-in">Body: </span>
+            <span class="param-name">body</span>
+            <span class="param-type">PersonInput(PersonInput)</span>
+            <p class="param-description">
+
+                <code>
+                    PersonInput{
+                      personName	string,
+                      lastName	string,
+                      roomId	integer($int32)
+                      }
+                  </code>
+
+            </p>
+        </li>
+    </ul>
+</div>
